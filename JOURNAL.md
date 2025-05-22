@@ -24,7 +24,7 @@ These are the absolute musts that a design should have:
 - The rocket is powered by electric propulsion for cheap and safe flights and fast turnarounds
 - The rocket uses thrust vectoring to lift off, hover and land propulsively
 - The rocket can perform a 1 meter hop and hover for 30 seconds
-- - The rocket is modular
+- The rocket is modular
 	- Components are easily accessible and replaceable
 	- The rocket is designed for a future launchpad integration
 	  > If I achieve reliable landings, I might try to build a launchpad to launch and catch the rocket from. The rocket should be modular and be designed with this in mind.
