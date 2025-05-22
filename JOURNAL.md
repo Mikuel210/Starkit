@@ -9,7 +9,7 @@ description: "A thrust vector controlled electric model rocket designed for prop
 created_at: "2025-05-20"
 
 ---
-## May 22: Goal of the project & Research on propulsion systems
+## May 22: Initial ideas and goal of the project
 
 I've identified the goal of this project to be the following:
 > To learn, have fun and to make something that I'm proud of by building an electric model rocket capable of lifting off, hovering and landing propulsively.
