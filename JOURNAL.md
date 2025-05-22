@@ -22,7 +22,9 @@ Also, the rocket should be modular and allow for a future launchpad system. In t
 
 According to my vision of the project, I've set some design requirements. This way, I can try to find the cheapest and most efficient way possible of creating something that I'll be happy with. You can find those in Goal.md
 
-![Initial ideas and concepts of possible designs](Images/Sketches.png)
+![](Images/Sketches.png)
+
+*Initial ideas and concepts of possible designs*
 
 **Total time spent: 1h 15min**
 
