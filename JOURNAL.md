@@ -10,11 +10,10 @@ created_at: "2025-05-20"
 
 ---
 ## May 22: Initial ideas and goal of the project
-
 I've identified the goal of this project to be the following:
 > To learn, have fun and to make something that I'm proud of by building an electric model rocket capable of lifting off, hovering and landing propulsively.
 
-With this goal in mind, I've brainstormed some concepts and I've chosen what I would want out of this project.
+With this goal in mind, I've brainstormed ideas and I've chosen what I would want out of this project.
 
 I've decided that the scope of this project should be building a fully reusable vehicle capable of lifting off, hovering and landing propulsively through thrust vector control. The rocket should be capable of  performing a 1 meter hop and hovering for 30 seconds.
 
