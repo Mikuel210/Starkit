@@ -80,7 +80,7 @@ The reasons I would choose counter-rotating propellers over a single propeller a
 If I want to get as much thrust as possible, I should use a higher pitch in the rear propeller. However, that would cause the propellers to rotate at different speeds, potentially needing TVC roll control to counteract the torque. I think investing in a higher thrust motor and propeller would be cheaper than increasing the rear propeller pitch and adding another TVC axis. I'll have to do more research to figure this out, but I think counter-rotating propellers are a really good option.
 
 ![](Images/CoaxialTest.png)
-*Test showing the thrust of different propeller spacings and rear propeller pitch difference. Source: https://www.icas.org/icas_archive/ICAS2014/data/papers/2014_0072_paper.pdf According to https://drones.stackexchange.com/questions/1209/do-propellers-layered-on-top-of-each-other-have-twice-the-thrust-of-one-propelle, you can get almost the full thrust if you increase the pitch of the rear propeller.
+*Test showing the thrust of different propeller spacings and rear propeller pitch difference. Source: https://www.icas.org/icas_archive/ICAS2014/data/papers/2014_0072_paper.pdf According to https://drones.stackexchange.com/questions/1209/do-propellers-layered-on-top-of-each-other-have-twice-the-thrust-of-one-propelle, you can get almost the full thrust if you increase the pitch of the rear propeller.*
 
 **Time spent: 1h 30min**
 
