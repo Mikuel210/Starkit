@@ -69,7 +69,7 @@ I've seen that placing two propellers in series decreases thrust and efficiency.
 
 ![](Images/Efficiency.png)
 
-*Test on the efficiency of normal, overlapping and coaxial propellers. Coaxial propellers are about 80% of the efficiency at a low spacing. Source: https://www.youtube.com/watch?v=tFJyE3Uns3o *
+*Test on the efficiency of normal, overlapping and coaxial propellers. Coaxial propellers are about 80% of the efficiency at a low spacing. Source: https://www.youtube.com/watch?v=tFJyE3Uns3o*
 
 The reasons I would choose counter-rotating propellers over a single propeller are:
 1. They cancel their torque, which means that they don't apply any rotational force to the vehicle and you don't have to worry about gyroscopic effects.
