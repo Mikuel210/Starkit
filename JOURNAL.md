@@ -68,6 +68,7 @@ I've seen that placing two propellers in series decreases thrust and efficiency.
 
 
 ![](Images/Efficiency.png)
+
 *Test on the efficiency of normal, overlapping and coaxial propellers. Coaxial propellers are about 80% of the efficiency at a low spacing. Source: https://www.youtube.com/watch?v=tFJyE3Uns3o
 
 The reasons I would choose counter-rotating propellers over a single propeller are:
@@ -75,11 +76,13 @@ The reasons I would choose counter-rotating propellers over a single propeller a
 2. You have some control authority in the roll axis. If the rocket gains angular speed, you can correct it by adjusting the throttle of each individual motor. This also allows me to only use 2 servos for TVC, as you only need to correct 2 axis.
 
 ![](Images/Ikarus.png)
+
 *The Ikarus model rocket had an issue where whenever it wanted to apply a torque through TVC, it had to apply a perpendicular torque as well due to the gyroscopic effects of a single propeller. In the Ikarus II rocket this problem was solved by using counter-rotating EDFs.*
 
 If I want to get as much thrust as possible, I should use a higher pitch in the rear propeller. However, that would cause the propellers to rotate at different speeds, potentially needing TVC roll control to counteract the torque. I think investing in a higher thrust motor and propeller would be cheaper than increasing the rear propeller pitch and adding another TVC axis. I'll have to do more research to figure this out, but I think counter-rotating propellers are a really good option.
 
 ![](Images/CoaxialTest.png)
+
 *Test showing the thrust of different propeller spacings and rear propeller pitch difference. Source: https://www.icas.org/icas_archive/ICAS2014/data/papers/2014_0072_paper.pdf According to https://drones.stackexchange.com/questions/1209/do-propellers-layered-on-top-of-each-other-have-twice-the-thrust-of-one-propelle, you can get almost the full thrust if you increase the pitch of the rear propeller.*
 
 **Time spent: 1h 30min**
