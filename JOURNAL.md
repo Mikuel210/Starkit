@@ -79,7 +79,7 @@ The reasons I would choose counter-rotating propellers over a single propeller a
 
 *The Ikarus model rocket had an issue where whenever it wanted to apply a torque through TVC, it had to apply a perpendicular torque as well due to the gyroscopic effects of a single propeller. In the Ikarus II rocket this problem was solved by using counter-rotating EDFs.*
 
-If I want to get as much thrust as possible, I should use a higher pitch in the rear propeller. However, that would cause the propellers to rotate at different speeds, potentially needing TVC roll control to counteract the torque. I think investing in a higher thrust motor and propeller would be cheaper than increasing the rear propeller pitch and adding another TVC axis. I'll have to do more research to figure this out, but I think counter-rotating propellers are a really good option.
+If I want to get as much thrust as possible, I should use a higher pitch in the rear propeller. However, that might cause the propellers to rotate at different speeds, which would cause a torque in the vehicle. I think investing in a higher thrust motor and propeller might be better, but I'll have to do more research to figure this out. Nonetheless I think counter-rotating propellers are a really good option.
 
 ![](Images/CoaxialTest.png)
 
