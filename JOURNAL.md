@@ -1,14 +1,10 @@
 ---
-
 title: "Starkit"
-
 author: "Miguel"
-
 description: "A thrust vector controlled electric model rocket designed for propulsive landings"
-
 created_at: "2025-05-20"
-
 ---
+
 ## May 22: Initial ideas and goal of the project
 
 I always like to begin engineering projects by setting a goal. For this project, my goal is the following:
