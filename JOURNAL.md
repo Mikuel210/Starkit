@@ -64,12 +64,6 @@ I've discarded ducting a propeller myself. However, I still have to make more re
 **Total time spent: 2h 30min**
 
 ## May 24: Research on counter-rotating propellers
-I've seen that placing two propellers in series decreases thrust and efficiency. However, if I keep the propellers spaced and use airflow straighteners for feeding the second propeller cleaner air, this could be mitigated.
-
-
-![](Images/Efficiency.png)
-
-*Test on the efficiency of normal, overlapping and coaxial propellers. Coaxial propellers are about 80% of the efficiency at a low spacing. Source: https://www.youtube.com/watch?v=tFJyE3Uns3o*
 
 The reasons I would choose counter-rotating propellers over a single propeller are:
 1. They cancel their torque, which means that they don't apply any rotational force to the vehicle and you don't have to worry about gyroscopic effects.
@@ -79,11 +73,31 @@ The reasons I would choose counter-rotating propellers over a single propeller a
 
 *The Ikarus model rocket had an issue where whenever it wanted to apply a torque through TVC, it had to apply a perpendicular torque as well due to the gyroscopic effects of a single propeller. In the Ikarus II rocket this problem was solved by using counter-rotating EDFs.*
 
-If I want to get as much thrust as possible, I should use a higher pitch in the rear propeller. However, that might cause the propellers to rotate at different speeds, which would cause a torque in the vehicle. I think investing in a higher thrust motor and propeller might be better, but I'll have to do more research to figure this out. Nonetheless I think counter-rotating propellers are a really good option.
+Placing the propellers one after the other would decrease thrust and efficiency. However, if I keep the propellers spaced and use airflow straighteners for feeding the second propeller cleaner air, this could be mitigated.
+
+![](Images/Efficiency.png)
+
+*Test on the efficiency of normal, overlapping and coaxial propellers. Coaxial propellers are about 80% of the efficiency at a low spacing. Source: https://www.youtube.com/watch?v=tFJyE3Uns3o*
+
+If I want to get as much thrust as possible in this configuration, I should use a higher pitch in the rear propeller. However, I don't think this is a good idea as there aren't many high pitch propeller options or test data, and using different propellers might cause them to rotate at different speeds, which could cause a torque in the vehicle.
+
+I'll have to do more research to figure this out, nonetheless I think counter-rotating propellers are a really good option.
 
 ![](Images/CoaxialTest.png)
 
 *Test showing the thrust of different propeller spacings and rear propeller pitch difference. Source: https://www.icas.org/icas_archive/ICAS2014/data/papers/2014_0072_paper.pdf According to https://drones.stackexchange.com/questions/1209/do-propellers-layered-on-top-of-each-other-have-twice-the-thrust-of-one-propelle, you can get almost the full thrust if you increase the pitch of the rear propeller.*
 
 **Time spent: 1h 30min**
+
+## May 25: Deciding on counter-rotating propellers
+
+https://www.youtube.com/watch?v=VsyFejn40Ss
+
+This video shows a vehicle with a similar configuration to what I was thinking. However, TVC roll control is later added because adjusting the throttle of each motor is not enough and causes the rocket to lose thrust.
+
+I could test the thrust of the motors at different throttle levels to try and avoid this, but either way I think adding TVC roll control would be better. In the future the rocket could need precise roll control if I attempt to build a catch tower.
+
+After some research I’ve decided that using two identical motors and propellers is the best option. You avoid torque and gyroscopic effects, and you can get their full efficiency by placing them side by side. However, I'll have to see if even with the structural weight that would add placing the propellers side by side, this configuration would outperform placing the propellers one after the other.
+
+**Time spent: 1h**
 
