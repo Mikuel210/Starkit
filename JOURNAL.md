@@ -42,7 +42,7 @@ These are not essential but they'd be cool to have:
 
 **Total time spent: 1h 15min**
 
-## May 24: Research on propulsion systems
+## May 24 Log 1: Research on propulsion systems
 I've decided to choose a propulsion system first and then work around that. Some options I think would fit this project are:
 - Single EDF (Electric Ducted Fan)
 - Single propeller
@@ -59,7 +59,7 @@ I've discarded ducting a propeller myself. However, I still have to make more re
 
 **Total time spent: 2h 30min**
 
-## May 24: Research on counter-rotating propellers
+## May 24 Log 2: Research on counter-rotating propellers
 
 The reasons I would choose counter-rotating propellers over a single propeller are:
 1. They cancel their torque, which means that they don't apply any rotational force to the vehicle and you don't have to worry about gyroscopic effects.
@@ -93,7 +93,33 @@ This video shows a vehicle with a similar configuration to what I was thinking. 
 
 I could test the thrust of the motors at different throttle levels to try and avoid this, but either way I think adding TVC roll control would be better. In the future the rocket could need precise roll control if I attempt to build a catch tower.
 
-After some research I’ve decided that using two identical motors and propellers is the best option. You avoid torque and gyroscopic effects, and you can get their full efficiency by placing them side by side. However, I'll have to see if even with the structural weight that would add placing the propellers side by side, this configuration would outperform placing the propellers one after the other.
+After some research I’ve decided that using two identical counter-rotating motors and propellers is the best option. You avoid torque and gyroscopic effects that you would have with a single propeller or EDF, and you still can get their full efficiency by placing them side by side. However, I'll have to see if even with the structural weight that would add placing the propellers side by side, this configuration would outperform placing the propellers one after the other.
 
 **Time spent: 1h**
 
+## May 27 Log 1: Deciding a motor configuration
+
+I've made a spreadsheet for calculating the Thrust to Weight Ratio (TWR) of a coaxial and a side by side configuration. 
+
+For the coaxial configuration, I'm picturing a cylindrical structure with a propeller at the top and another at the bottom. For the side by side configuration, I'm thinking of 2 of such structures next to each other, with one propeller each.
+
+For the calculations I've used a carbon fiber rod structure, 4 TVC vanes and 2 Emax ECO II 2807 motors with 7" propellers. I will have to research more in depth if these options are the best for the project, but so far the coaxial configuration has a better TWR.
+
+There are many variables that I won't know until I pick all the parts and design the 3D models. The calculations will get more accurate as I do so, but for now I will be designing the rocket for a coaxial configuration.
+![](CoaxialConfiguration.png)
+
+**Time spent: 1h**
+
+## May 27 Log 2: Choosing a TVC method
+
+I had figured out previously that I need TVC roll control and I can't just rely on throttling the motors at different speeds. Because of this the only viable options I have are: 
+- 3 TVC vanes
+- 4 TVC vanes
+
+![](TVCVanes.png)
+
+3 vanes would probably be a bit cheaper. However, the servo controlling the bigger vane would likely need more torque and I would have less roll control authority, too. I would probably need to add some kind of hinge or support as well when making a vane this long.
+
+Although it would probably be fine with 3 vanes, I will go with 4 as I prefer to keep all axis identical and to base my design on something that's been done by many more people.
+
+**Time spent: 1h 15min**

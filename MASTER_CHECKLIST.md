@@ -1,0 +1,9 @@
+- [x] Choose a propulsion system
+- [ ] Choose a TVC method
+- [ ] Choose a structure and landing legs
+- [ ] Choose motors, propellers and ESCs
+- [ ] Choose servos
+- [ ] Choose batteries and charger
+- [ ] Choose avionics components
+- [ ] Design PCB
+- [ ] CAD
