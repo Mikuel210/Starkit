@@ -106,7 +106,7 @@ For the coaxial configuration, I'm picturing a cylindrical structure with a prop
 For the calculations I've used a carbon fiber rod structure, 4 TVC vanes and 2 Emax ECO II 2807 motors with 7" propellers. I will have to research more in depth if these options are the best for the project, but so far the coaxial configuration has a better TWR.
 
 There are many variables that I won't know until I pick all the parts and design the 3D models. The calculations will get more accurate as I do so, but for now I will be designing the rocket for a coaxial configuration.
-![](CoaxialConfiguration.png)
+![](Images/CoaxialConfiguration.png)
 
 **Time spent: 1h**
 
@@ -116,7 +116,7 @@ I had figured out previously that I need TVC roll control and I can't just rely 
 - 3 TVC vanes
 - 4 TVC vanes
 
-![](TVCVanes.png)
+![](Images/TVCVanes.png)
 
 3 vanes would probably be a bit cheaper. However, the servo controlling the bigger vane would likely need more torque and I would have less roll control authority, too. I would probably need to add some kind of hinge or support as well when making a vane this long.
 
