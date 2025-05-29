@@ -18,7 +18,7 @@ Based on my vision for this project, I've set some design requirements. This way
 These are the absolute musts that a design should have:
 
 - The rocket is powered by electric propulsion for cheap and safe flights and fast turnarounds
-- The rocket uses thrust vectoring to lift off, hover and land propulsively
+- The rocket is fully reusable and uses thrust vectoring to lift off, hover and land propulsively
 - The rocket can perform a 1 meter hop and hover for 30 seconds
 - The rocket is modular
 	- Components are easily accessible and replaceable
@@ -87,13 +87,13 @@ I'll have to do more research to figure this out, nonetheless I think counter-ro
 
 ## May 25: Deciding on counter-rotating propellers
 
+After some research I’ve decided that using two identical counter-rotating motors and propellers is the best option. You avoid torque and gyroscopic effects that you would have with a single propeller or EDF, and you still can get their full efficiency by placing them side by side. However, I'll have to see if even with the structural weight that would add placing the propellers side by side, this configuration would outperform placing the propellers one after the other.
+
 https://www.youtube.com/watch?v=VsyFejn40Ss
 
 This video shows a vehicle with a similar configuration to what I was thinking. However, TVC roll control is later added because adjusting the throttle of each motor is not enough and causes the rocket to lose thrust.
 
 I could test the thrust of the motors at different throttle levels to try and avoid this, but either way I think adding TVC roll control would be better. In the future the rocket could need precise roll control if I attempt to build a catch tower.
-
-After some research I’ve decided that using two identical counter-rotating motors and propellers is the best option. You avoid torque and gyroscopic effects that you would have with a single propeller or EDF, and you still can get their full efficiency by placing them side by side. However, I'll have to see if even with the structural weight that would add placing the propellers side by side, this configuration would outperform placing the propellers one after the other.
 
 **Time spent: 1h**
 
@@ -101,7 +101,7 @@ After some research I’ve decided that using two identical counter-rotating mot
 
 I've made a spreadsheet for calculating the Thrust to Weight Ratio (TWR) of a coaxial and a side by side configuration. 
 
-For the coaxial configuration, I'm picturing a cylindrical structure with a propeller at the top and another at the bottom. For the side by side configuration, I'm thinking of 2 of such structures next to each other, with one propeller each.
+For the coaxial configuration, I'm picturing a cylindrical structure with a propeller at the top and another at the bottom. For the side by side configuration, I'm thinking of 2 of such structures next to each other, with one propeller each. While this isn't necessarily the only way of placing the propellers one next to the other, I want to 
 
 For the calculations I've used a carbon fiber rod structure, 4 TVC vanes and 2 Emax ECO II 2807 motors with 7" propellers. I will have to research more in depth if these options are the best for the project, but so far the coaxial configuration has a better TWR.
 
@@ -118,8 +118,38 @@ I had figured out previously that I need TVC roll control and I can't just rely 
 
 ![](Images/TVCVanes.png)
 
-3 vanes would probably be a bit cheaper. However, the servo controlling the bigger vane would likely need more torque and I would have less roll control authority, too. I would probably need to add some kind of hinge or support as well when making a vane this long.
+3 vanes would probably be slightly cheaper. However, the servo controlling the longer vane would likely need more torque and I would have less roll control authority too. I would probably need to add some kind of hinge or support as well when making a vane this long.
 
 Although it would probably be fine with 3 vanes, I will go with 4 as I prefer to keep all axis identical and to base my design on something that's been done by many more people.
 
+I'm aiming for a 7" build, and I haven't seen anyone use 3 vanes with the amount of thrust I'm aiming for. This means I can't choose my servos based on the torque that other people has used. If I manage to make a configuration with smaller propellers and less thrust, I might reconsider using 3 vanes.
+
 **Time spent: 1h 15min**
+
+## May 28: Structure and general layout
+
+For TVC to work properly you need the thrust vector to be far away from the center of gravity (COG). You want to place all the weight at the top and TVC the bottom motor or the other way around.
+
+A lower COG is better for stability in landings. This means I would want to place all the weight at the bottom and use TVC in the upper motor. For this, I would need a structure without walls for the air to get out. Plus, as I had figured out earlier, I probably don't want the structure to act as a duct as it can decrease performance.
+
+My first thought was using carbon fiber rods, which I've seen being used in similar projects. After researching some other options like balsa wood, I've come to the conclusion that carbon fiber is indeed the best option. It has a much better strength to weight ratio than others, and even though it would likely need stiffeners because it can flex, what I care about is that they provide strength with the minimum amount of volume so that they don't obstruct the airflow much.
+
+**Time spent: 1h 15min**
+
+## May 29: Research on landing legs
+
+In the future I might build a launchpad to launch and catch the rocket from, which means I would need landing legs that are either deployable or detachable so that they don't interfere with the launch mount.
+
+I think deployable legs would be a better option. They would allow me to test the launch mount before trying to catch the rocket, and they could even allow me to abort a catch if any readings are off. There's also the factor of that it's much cooler and a nice challenge.
+
+After looking at some other projects I've come up with a design that would be reliable and cheap and easy to implement.
+
+![](Images/LandingLegs.png)
+*Landing legs of the Scout F rocket by BPS.space*
+
+Similar to the image, landing legs in my rocket would have 2 carbon fiber structs with a 3D print at the top. A single struct would be pulled by a tension spring (a rubber band in the image) and would snap into the 3D print when deployed. Landing legs would be held in place with servos.
+
+I will go with 4 landing legs. It's what I've seen being done the most and I think it's a nice spot for stability without much weight.
+
+**Time spent: 1h 15min**
+

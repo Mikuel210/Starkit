@@ -1,9 +1,9 @@
 - [x] Choose a propulsion system
-- [ ] Choose a TVC method
-- [ ] Choose a structure and landing legs
-- [ ] Choose motors, propellers and ESCs
-- [ ] Choose servos
-- [ ] Choose batteries and charger
+- [x] Choose a TVC method
+- [x] Choose a structure and landing legs
 - [ ] Choose avionics components
 - [ ] Design PCB
-- [ ] CAD
+- [ ] Choose servos
+- [ ] CAD and simulate a 7" build
+- [ ] Choose motors, propellers and ESCs
+- [ ] Choose batteries and charger
