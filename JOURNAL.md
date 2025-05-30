@@ -155,3 +155,13 @@ Similar to the image, landing legs in my rocket would have 2 carbon fiber struct
 I will go with 4 landing legs. It's what I've seen being done the most and I think it's a nice spot for stability without much weight.
 
 **Time spent: 1h 15min**
+
+## May 30: Starting the CAD design
+
+Now that I know the general design and layout of the rocket, I began designing it in CAD. I don't know yet the parts that I'm going to use, but this model will help me refine my calculations. I'm designing for a 7" build, but if after making the CAD model and picking the parts I realize I have enough weight margin to scale the motors and propellers or the whole vehicle down, I will do that.
+
+![](Images/CAD1.png)
+
+I made a new Onshape document and began designing the base of the vehicle. I've almost finished making the landing legs. Tomorrow I plan on adding the bottom motor mount and rails for integration with the launch mount.
+
+**Time spent: 4h 30min**
