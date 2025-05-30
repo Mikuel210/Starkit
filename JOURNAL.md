@@ -148,6 +148,7 @@ I think deployable legs would be a better option. They would allow me to test th
 After looking at some other projects I've come up with a design that would be reliable and cheap and easy to implement.
 
 ![](Images/LandingLegs.png)
+
 *Landing legs of the Scout F rocket by BPS.space*
 
 Similar to the image, landing legs in my rocket would have 2 carbon fiber structs with a 3D print at the top. A single struct would be pulled by a tension spring (a rubber band in the image) and would snap into the 3D print when deployed. Landing legs would be held in place with servos.
