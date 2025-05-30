@@ -101,7 +101,7 @@ I could test the thrust of the motors at different throttle levels to try and av
 
 I've made a spreadsheet for calculating the Thrust to Weight Ratio (TWR) of a coaxial and a side by side configuration. 
 
-For the coaxial configuration, I'm picturing a cylindrical structure with a propeller at the top and another at the bottom. For the side by side configuration, I'm thinking of 2 of such structures next to each other, with one propeller each. While this isn't necessarily the only way of placing the propellers one next to the other, I want to 
+For the coaxial configuration, I'm picturing a cylindrical structure with a propeller at the top and another at the bottom. For the side by side configuration, I'm thinking of 2 of such structures next to each other, with one propeller each. Note that this isn't necessarily the only way of placing the propellers one next to the other, but I want to keep a shape that can integrate nicely with a launch mount and a catch tower.
 
 For the calculations I've used a carbon fiber rod structure, 4 TVC vanes and 2 Emax ECO II 2807 motors with 7" propellers. I will have to research more in depth if these options are the best for the project, but so far the coaxial configuration has a better TWR.
 
@@ -118,13 +118,16 @@ I had figured out previously that I need TVC roll control and I can't just rely 
 
 ![](Images/TVCVanes.png)
 
-3 vanes would probably be slightly cheaper. However, the servo controlling the longer vane would likely need more torque and I would have less roll control authority too. I would probably need to add some kind of hinge or support as well when making a vane this long.
+Using 3 vanes would probably be slightly cheaper. Although it would probably be fine with 3, I've decided to go with 4. The reasons are:
+- 4 vanes allow me to keep all axis identical, which simplifies tuning
+- 4 vanes double the control authority in the roll axis, which improves stability
+- A 3 vane system needs for one vane to be longer. A longer vane would probably need hinges or supports, adding complexity.
+- There are very few examples of 3 vane systems, and I haven't found any for the thrust that I'm aiming for. This makes it harder to choose servos with the right amount of torque.
+- I want to keep control over the length of the vanes for balancing control authority and airflow obstruction. This is harder with a 3 vane system, as one vane has to go all across.
 
-Although it would probably be fine with 3 vanes, I will go with 4 as I prefer to keep all axis identical and to base my design on something that's been done by many more people.
+I don't think using 4 vanes would mean any significant cost increase, but they are simpler, they provide more control and I have more design references, so I’ve chosen to go with that.
 
-I'm aiming for a 7" build, and I haven't seen anyone use 3 vanes with the amount of thrust I'm aiming for. This means I can't choose my servos based on the torque that other people has used. If I manage to make a configuration with smaller propellers and less thrust, I might reconsider using 3 vanes.
-
-**Time spent: 1h 15min**
+**Time spent: 1h 30min**
 
 ## May 28: Structure and general layout
 
@@ -152,4 +155,3 @@ Similar to the image, landing legs in my rocket would have 2 carbon fiber struct
 I will go with 4 landing legs. It's what I've seen being done the most and I think it's a nice spot for stability without much weight.
 
 **Time spent: 1h 15min**
-
