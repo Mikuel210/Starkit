@@ -8,7 +8,8 @@ created_at: "2025-05-20"
 ## May 22: Initial ideas and goal of the project
 
 I always like to begin engineering projects by setting a goal. For this project, my goal is the following:
-> To learn, have fun and to make something that I'm proud of by building an electric model rocket capable of lifting off, hovering and landing propulsively.
+
+**To learn and have fun by building an electric model rocket capable of lifting off, hovering and landing propulsively**
 
 I want to build a fully reusable vehicle capable of landing propulsively through thrust vector control. If the rocket is capable of performing a 1 meter hop and hover for 30 seconds, I will consider it a success.
 
@@ -40,7 +41,7 @@ These are not essential but they'd be cool to have:
 
 *Initial ideas and concepts of possible designs*
 
-**Total time spent: 1h 15min**
+**Time spent: 1h 15min**
 
 ## May 24 Log 1: Research on propulsion systems
 I've decided to choose a propulsion system first and then work around that. Some options I think would fit this project are:
@@ -57,7 +58,7 @@ The main things I've learnt today are:
 
 I've discarded ducting a propeller myself. However, I still have to make more research to figure out what the best option is. If I manage to overcome the gyroscopic effects, a single propeller would be a nice option over an EDF, as it would be less expensive. Counter-rotating propellers would also be a good option as they cancel their torque, but I still have to research if the thrust of two propellers in series is just the sum of their individual thrust.
 
-**Total time spent: 2h 30min**
+**Time spent: 2h 30min**
 
 ## May 24 Log 2: Research on counter-rotating propellers
 
@@ -159,10 +160,36 @@ I will go with 4 landing legs. It's what I've seen being done the most and I thi
 
 ## May 30: Starting the CAD design
 
-Now that I know the general design and layout of the rocket, I began designing it in CAD. I don't know yet the parts that I'm going to use, but this model will help me refine my calculations. I'm designing for a 7" build, but if after making the CAD model and picking the parts I realize I have enough weight margin to scale the motors and propellers or the whole vehicle down, I will do that.
+Now that I know the general design and layout of the rocket, I've begun designing it in CAD. I don't know the parts that I'm going to use yet, but this model will help me refine my calculations. I'm designing for a 7" build, but if after making the CAD model and picking the parts I realize I have enough weight margin to scale down the motors or the whole vehicle, I will do that.
 
 ![](Images/CAD1.png)
 
 I made a new Onshape document and began designing the base of the vehicle. I've almost finished making the landing legs. Tomorrow I plan on adding the bottom motor mount and rails for integration with the launch mount.
 
 **Time spent: 4h 30min**
+
+## May 31: Landing legs are finished
+
+Today I've finished making the landing legs. I've added stoppers and bolts that will allow the parts to rotate into place. 
+
+I've also added the struts that will hold the bottom motor. These double as airflow straighteners, which probably isn't necessary. However I'm doing that on the top motor for feeding the bottom motor cleaner air, and I prefer to do it in both to ensure both motors behave the same and no torque is created.
+
+Finally I've began making the part that will join the bottom and top rods of the main structure. This allow me to buy shorter rods which I've seen are the cheapest option, and this also makes the rods flex less. This part will hold the servos that hold the landing legs in place too. 
+
+![](Images/CAD2.png)
+
+![](Images/CAD3.png)
+
+**Time spent: 4h**
+
+## June 1: Added servo attachments
+
+I didn't have a lot of time today but I've figured out how to attach the servos for deploying the legs. The servos snap into some slots and are then secured with two bolts.
+
+Now I only have to add attachments for zip tying the two parts of each landing leg. This way both can stay in place with a single servo. With this the leg deployment mechanism would be complete.
+
+![](Images/CAD4.png)
+
+![](Images/CAD5.png)
+
+**Time spent: 2h**
