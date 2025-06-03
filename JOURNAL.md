@@ -4,6 +4,7 @@ author: "Miguel"
 description: "A thrust vector controlled electric model rocket designed for propulsive landings"
 created_at: "2025-05-20"
 ---
+**Total time spent: 23h 45min**
 
 ## May 22: Initial ideas and goal of the project
 
@@ -152,7 +153,7 @@ After looking at some other projects I've come up with a design that would be re
 
 *Landing legs of the Scout F rocket by BPS.space*
 
-Similar to the image, landing legs in my rocket would have 2 carbon fiber structs with a 3D print at the top. A single struct would be pulled by a tension spring (a rubber band in the image) and would snap into the 3D print when deployed. Landing legs would be held in place with servos.
+Similar to the image, landing legs in my rocket would have 2 carbon fiber structs with a 3D print at the top. A single struct would be pulled by a tension spring (a rubber band in the image) and would snap into the 3D print when deployed, locking the leg in place. Landing legs would be held in place with servos before deployment.
 
 I will go with 4 landing legs. It's what I've seen being done the most and I think it's a nice spot for stability without much weight.
 
@@ -186,10 +187,22 @@ Finally I've began making the part that will join the bottom and top rods of the
 
 I didn't have a lot of time today but I've figured out how to attach the servos for deploying the legs. The servos snap into some slots and are then secured with two bolts.
 
-Now I only have to add attachments for zip tying the two parts of each landing leg. This way both can stay in place with a single servo. With this the leg deployment mechanism would be complete.
+Now, I only have to add holes for using a zip tie to attach the two parts of each landing leg. This way both can stay in place with a single servo. With this the leg deployment mechanism would be complete.
 
 ![](Images/CAD4.png)
+
+
+**Time spent: 2h**
+
+## June 2: Switched to thicker rods and completed the leg deployment mechanism
+
+I should have probably checked how much carbon fiber rods flex at different diameters before starting the CAD model. It's really bad at 3mm. I've changed most rods to 5mm which should work a lot better.
+
+I've also redesigned the tip of the landing legs. This allows for them to be held closer to the structure before deployment, and it should also improve the reliability of the two parts of the legs locking together. I've also added a ring that attaches the two parts of landing legs, avoiding the need of using a zip tie.
+
+With this I've finished making the leg deployment mechanism. Next, I'll make the part for holding the upper motor and TVC servos. I also plan on prototyping servo attachments soon to make sure the friction from the bolts is strong enough to hold a servo in place.
 
 ![](Images/CAD5.png)
 
 **Time spent: 2h**
+
