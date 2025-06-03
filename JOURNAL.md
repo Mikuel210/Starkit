@@ -25,9 +25,10 @@ These are the absolute musts that a design should have:
 - The rocket is modular
 	- Components are easily accessible and replaceable
 	- The rocket is designed for a future launchpad integration
-	  > If I achieve reliable landings, I might try to build a launchpad to launch and catch the rocket from. The rocket should be modular and be designed with this in mind.
+	  
+	  *If I achieve reliable landings, I might try to build a launchpad to launch and catch the rocket from. The rocket should be modular and be designed with this in mind.*
 
-		- The rocket has got detachable landing legs and attachable catch pins
+		- The rocket has got detachable or deployable landing legs and attachable catch pins
 		- The pad should be able to hold the rocket until full throttle is reached
 
 ## Dream goals
@@ -46,12 +47,14 @@ These are not essential but they'd be cool to have:
 
 ## May 24 Log 1: Research on propulsion systems
 I've decided to choose a propulsion system first and then work around that. Some options I think would fit this project are:
+
 - Single EDF (Electric Ducted Fan)
 - Single propeller
 - Counter-rotating propellers
 - Ducting a propeller(s) myself
 
 The main things I've learnt today are:
+
 - Ducting a propeller can increase efficiency and thrust.
 - EDFs take advantage of this. An added benefit is that they often have stator vanes that minimize the torque produced by spinning the propeller.
 - A larger propeller is usually more efficient and provides more thrust. A larger propeller could match the thrust of a smaller EDF while being less expensive, however the torque and gyroscopic effects become greater the more you scale the propeller.
@@ -64,6 +67,7 @@ I've discarded ducting a propeller myself. However, I still have to make more re
 ## May 24 Log 2: Research on counter-rotating propellers
 
 The reasons I would choose counter-rotating propellers over a single propeller are:
+
 1. They cancel their torque, which means that they don't apply any rotational force to the vehicle and you don't have to worry about gyroscopic effects.
 2. You have some control authority in the roll axis. If the rocket gains angular speed, you can correct it by adjusting the throttle of each individual motor. This also allows me to only use 2 servos for TVC, as you only need to correct 2 axis.
 
@@ -114,13 +118,12 @@ There are many variables that I won't know until I pick all the parts and design
 
 ## May 27 Log 2: Choosing a TVC method
 
-I had figured out previously that I need TVC roll control and I can't just rely on throttling the motors at different speeds. Because of this the only viable options I have are: 
-- 3 TVC vanes
-- 4 TVC vanes
+I had figured out previously that I need TVC roll control and I can't just rely on throttling the motors at different speeds. Because of this the only viable options I have are using 3 or 4 TVC vanes.
 
 ![](Images/TVCVanes.png)
 
 Using 3 vanes would probably be slightly cheaper. Although it would probably be fine with 3, I've decided to go with 4. The reasons are:
+
 - 4 vanes allow me to keep all axis identical, which simplifies tuning
 - 4 vanes double the control authority in the roll axis, which improves stability
 - A 3 vane system needs for one vane to be longer. A longer vane would probably need hinges or supports, adding complexity.
@@ -145,7 +148,7 @@ My first thought was using carbon fiber rods, which I've seen being used in simi
 
 In the future I might build a launchpad to launch and catch the rocket from, which means I would need landing legs that are either deployable or detachable so that they don't interfere with the launch mount.
 
-I think deployable legs would be a better option. They would allow me to test the launch mount before trying to catch the rocket, and they could even allow me to abort a catch if any readings are off. There's also the factor of that it's much cooler and a nice challenge.
+I think deployable legs would be a better option. They would allow me to test the launch mount before trying to catch the rocket, and they could even allow me to abort a catch if any readings are off. Deployable legs are also much cooler and a nice challenge.
 
 After looking at some other projects I've come up with a design that would be reliable and cheap and easy to implement.
 
@@ -153,7 +156,7 @@ After looking at some other projects I've come up with a design that would be re
 
 *Landing legs of the Scout F rocket by BPS.space*
 
-Similar to the image, landing legs in my rocket would have 2 carbon fiber structs with a 3D print at the top. A single struct would be pulled by a tension spring (a rubber band in the image) and would snap into the 3D print when deployed, locking the leg in place. Landing legs would be held in place with servos before deployment.
+Similar to the image, landing legs in my rocket would have 2 carbon fiber struts with a 3D print at the top. A single strut would be pulled by a tension spring (a rubber band in the image) and would snap into the 3D print when deployed, locking the leg in place. Landing legs would be held in place with servos before deployment.
 
 I will go with 4 landing legs. It's what I've seen being done the most and I think it's a nice spot for stability without much weight.
 
@@ -175,7 +178,7 @@ Today I've finished making the landing legs. I've added stoppers and bolts that 
 
 I've also added the struts that will hold the bottom motor. These double as airflow straighteners, which probably isn't necessary. However I'm doing that on the top motor for feeding the bottom motor cleaner air, and I prefer to do it in both to ensure both motors behave the same and no torque is created.
 
-Finally I've began making the part that will join the bottom and top rods of the main structure. This allow me to buy shorter rods which I've seen are the cheapest option, and this also makes the rods flex less. This part will hold the servos that hold the landing legs in place too. 
+Finally, I've began making the part that will join the bottom and top rods of the main structure. This allow me to buy shorter rods which I've seen are the cheapest option, and this also makes the rods flex less. This part will hold the servos that hold the landing legs in place too. 
 
 ![](Images/CAD2.png)
 
@@ -202,7 +205,6 @@ I've also redesigned the tip of the landing legs. This allows for them to be hel
 
 With this I've finished making the leg deployment mechanism. Next, I'll make the part for holding the upper motor and TVC servos. I also plan on prototyping servo attachments soon to make sure the friction from the bolts is strong enough to hold a servo in place.
 
-![](Images/CAD5.png)
+![](CAD6.png)
 
 **Time spent: 2h**
-
