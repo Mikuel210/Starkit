@@ -4,7 +4,7 @@ author: "Miguel"
 description: "A thrust vector controlled electric model rocket designed for propulsive landings"
 created_at: "2025-05-20"
 ---
-**Total time spent: 23h 45min**
+**Total time spent: 27h 15min**
 
 ## May 22: Initial ideas and goal of the project
 
@@ -208,3 +208,14 @@ With this I've finished making the leg deployment mechanism. Next, I'll make the
 ![](CAD6.png)
 
 **Time spent: 2h**
+
+## June 4: The CAD model is taking shape
+
+Today I've made the top assembly that holds the upper motor and the 4 servos with TVC vanes. I've chosen to use Corona DS-919-MG servos, as they are fast and precise; and Emax ECO II 2807 1300KV motors, as they provide the most thrust for their range at a really affordable price too.
+
+Next I'll make mounts for the batteries, ESCs, PCB and motors (right now they're on top of the struts and they need a mount to be screwed on). With this I should be able to slice the models to know their weight and calculate the TWR of the rocket.
+
+![](Images/CAD7.png)
+
+
+**Time spent: 3h 30min**
