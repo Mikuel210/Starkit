@@ -4,7 +4,7 @@ author: "Miguel"
 description: "A thrust vector controlled electric model rocket designed for propulsive landings"
 created_at: "2025-05-20"
 ---
-**Total time spent: 27h 15min**
+**Total time spent: 31h 15min**
 
 ## May 22: Initial ideas and goal of the project
 
@@ -219,3 +219,17 @@ Next I'll make mounts for the batteries, ESCs, PCB and motors (right now they're
 
 
 **Time spent: 3h 30min**
+
+## June 6: The CAD model is finished!
+
+Today I've made the battery, ESC, PCB and motor mounts. I've also added attachments for catch pins and for securing the rocket to a test stand which I plan on using for tuning the control system.
+
+With this the CAD model is finished. I've sliced all of the parts and determined that the TWR of the rocket is around 2. This is in the range that I was hoping for, as I want to have margin for if the rocket ends up weighing more or it produces less thrust. I will keep it at this scale and with a coaxial configuration, as it's simpler and has a similar TWR.
+
+Next, I will do more research on batteries and ESCs to see if what I've chosen for now is the best option. After this I will begin designing the avionics and prototyping mounts and attachments.
+
+![](Images/CAD8.png)
+
+![](Images/CAD9.png)
+
+**Time spent: 4h**
