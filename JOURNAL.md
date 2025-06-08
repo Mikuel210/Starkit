@@ -220,16 +220,48 @@ Next I'll make mounts for the batteries, ESCs, PCB and motors (right now they're
 
 **Time spent: 3h 30min**
 
-## June 6: The CAD model is finished!
+## June 6 Log 1: The CAD model is finished!
 
 Today I've made the battery, ESC, PCB and motor mounts. I've also added attachments for catch pins and for securing the rocket to a test stand which I plan on using for tuning the control system.
 
 With this the CAD model is finished. I've sliced all of the parts and determined that the TWR of the rocket is around 2. This is in the range that I was hoping for, as I want to have margin for if the rocket ends up weighing more or it produces less thrust. I will keep it at this scale and with a coaxial configuration, as it's simpler and has a similar TWR.
 
-Next, I will do more research on batteries and ESCs to see if what I've chosen for now is the best option. After this I will begin designing the avionics and prototyping mounts and attachments.
+Next, I will do more research on batteries and ESCs to see if what I've been using for now is the best option. After this I will begin designing the avionics and prototyping mounts and attachments.
 
 ![](Images/CAD8.png)
 
 ![](Images/CAD9.png)
 
 **Time spent: 4h**
+
+## June 6 Log 2: Research on batteries and ESCs
+
+I've decided to switch from two 3S batteries to two 6S batteries. This simplifies wiring, as I would have to find a way to connect the 3S batteries in series while keeping the cables as short as possible, as making them longer could damage the ESCs.
+
+For the ESCs I've chosen to use the SURPASS HOBBY Flier 60A, as it's cost effective and it provides a 6V 8A output to power the rest of components.
+
+**Time spent: 1h 30min**
+
+## June 7: Research on avionics
+
+Today, I've made research on avionics components and chosen to use the following:
+
+- **Controller**: I've chosen the ESP32 as it gives me enough processing power and built in communications
+- **Altitude measurement**: I've chosen the TF-Luna LiDAR, as it's accurate and doesn't drift over time. While this sensor limits hops to up to 8 meters instead of the 10 meters I was aiming for, I think this is a fair tradeoff as upgrading to a 10 meter LiDAR would be twice as expensive.
+- **Orientation**: I've chosen to go with an MPU-9250 IMU (Inertial Measurement Unit), as it's cost effective and widely used
+- **Communications and data logging**: I will use Bluetooth, provided by the ESP32. I will monitor data and control the launch countdown from a laptop and the data stream will be saved on the computer.
+- I will also use a voltage regulator for the LiDAR, resistors for measuring the voltage of the batteries and an LED and a buzzer for state indication
+
+With this, I've updated the CAD model to house the new components:
+
+![](Images/CAD10.png)
+
+Next, I've begun making a BOM (Bill of Materials) so that I can keep track of the price and the weight of all components. I've also chosen a charger, a LiPo bag, a magnetic propeller balancer and extension cables and connectors:
+
+![[BOM1.png]]
+
+Finally, I've created a new KiCAD project and I've begun making the schematic for the PCB and some custom symbols.
+
+![](Images/PCB1.png)
+
+**Time spent: 7h 30min**

@@ -5,5 +5,6 @@
 - [ ] Choose avionics components
 - [ ] Design PCB
 - [x] Choose servos
-- [ ] Choose motors, propellers and ESCs
+- [x] Choose motors, propellers and ESCs
 - [ ] Choose batteries and charger
+- [ ] Create BOM
