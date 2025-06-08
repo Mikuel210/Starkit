@@ -4,7 +4,7 @@ author: "Miguel"
 description: "A thrust vector controlled electric model rocket designed for propulsive landings"
 created_at: "2025-05-20"
 ---
-**Total time spent: 31h 15min**
+**Total time spent: 40h 15min**
 
 ## May 22: Initial ideas and goal of the project
 
