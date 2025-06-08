@@ -242,7 +242,7 @@ For the ESCs I've chosen to use the SURPASS HOBBY Flier 60A, as it's cost effect
 
 **Time spent: 1h 30min**
 
-## June 7: Research on avionics
+## June 7: Research on avionics + started making the BOM and PCB
 
 Today, I've made research on avionics components and chosen to use the following:
 
@@ -258,10 +258,13 @@ With this, I've updated the CAD model to house the new components:
 
 Next, I've begun making a BOM (Bill of Materials) so that I can keep track of the price and the weight of all components. I've also chosen a charger, a LiPo bag, a magnetic propeller balancer and extension cables and connectors:
 
-![[BOM1.png]]
+![](Images/BOM1.png)
 
 Finally, I've created a new KiCAD project and I've begun making the schematic for the PCB and some custom symbols.
 
 ![](Images/PCB1.png)
 
 **Time spent: 7h 30min**
+
+
+
