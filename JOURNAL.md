@@ -4,7 +4,7 @@ author: "Miguel"
 description: "A thrust vector controlled electric model rocket designed for propulsive landings"
 created_at: "2025-05-20"
 ---
-**Total time spent: 40h 15min**
+**Total time spent: 45h 45min**
 
 ## May 22: Initial ideas and goal of the project
 
@@ -266,5 +266,10 @@ Finally, I've created a new KiCAD project and I've begun making the schematic fo
 
 **Time spent: 7h 30min**
 
+## June 8: Finished the schematic
 
+Today I’ve created custom symbols for the ESP32, the buzzer and the MPU9250. With this I’ve finished making the schematic. Next, I’ll create custom footprints and start making the PCB layout.
 
+![](Images/PCB2.png)
+
+**Time spent: 5h 30min**
