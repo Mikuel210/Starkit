@@ -8,7 +8,10 @@
 - [x] Choose batteries and charger
 - [ ] Create BOM
 - [ ] Design PCB
+- [ ] Update servo mounts to use a glued part that bolts into the thing
 - [ ] Prototype attachments and servo mounts
+- [ ] How am I going to cut the rods
+- [ ] How am I going to build the test stand
 
 ## After submitting
 

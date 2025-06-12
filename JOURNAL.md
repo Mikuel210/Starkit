@@ -4,7 +4,7 @@ author: "Miguel"
 description: "A thrust vector controlled electric model rocket designed for propulsive landings"
 created_at: "2025-05-20"
 ---
-**Total time spent: 45h 45min**
+**Total time spent: 51h 45min**
 
 ## May 22: Initial ideas and goal of the project
 
@@ -186,7 +186,7 @@ Finally, I've began making the part that will join the bottom and top rods of th
 
 **Time spent: 4h**
 
-## June 1: Added servo attachments
+## June 1: Adding servo attachments
 
 I didn't have a lot of time today but I've figured out how to attach the servos for deploying the legs. The servos snap into some slots and are then secured with two bolts.
 
@@ -197,7 +197,7 @@ Now, I only have to add holes for using a zip tie to attach the two parts of eac
 
 **Time spent: 2h**
 
-## June 2: Switched to thicker rods and completed the leg deployment mechanism
+## June 2: Switching to thicker rods and completing the leg deployment mechanism
 
 I should have probably checked how much carbon fiber rods flex at different diameters before starting the CAD model. It's really bad at 3mm. I've changed most rods to 5mm which should work a lot better.
 
@@ -242,7 +242,7 @@ For the ESCs I've chosen to use the SURPASS HOBBY Flier 60A, as it's cost effect
 
 **Time spent: 1h 30min**
 
-## June 7: Research on avionics + started making the BOM and PCB
+## June 7: Research on avionics + beginning making the BOM and PCB
 
 Today, I've made research on avionics components and chosen to use the following:
 
@@ -266,10 +266,22 @@ Finally, I've created a new KiCAD project and I've begun making the schematic fo
 
 **Time spent: 7h 30min**
 
-## June 8: Finished the schematic
+## June 8: Finishing the schematic
 
-Today I’ve created custom symbols for the ESP32, the buzzer and the MPU9250. With this I’ve finished making the schematic. Next, I’ll create custom footprints and start making the PCB layout.
+Today I’ve created custom symbols for the ESP32, the buzzer and the MPU9250. With this I’ve made all the connections and finished making the schematic. I've also realized that I can configure one ESC to use 5V instead of 6, eliminating the need to use a voltage regulator for the LiDAR. Next, I’ll create custom footprints and start making the PCB layout.
 
-![](Images/PCB2.png)
+![](Images/PCB5.png)
 
 **Time spent: 5h 30min**
+
+## June 12: Starting the PCB layout
+
+Today I've created and downloaded most footprints and 3D models and I've placed them on the PCB layout. This is my first PCB and I really like how it's looking so far :)
+
+Next, I'll place the missing components and models and route the remaining traces.
+
+![](Images/PCB3.png)
+
+![](Images/PCB4.png)
+
+**Time spent: 6h**
