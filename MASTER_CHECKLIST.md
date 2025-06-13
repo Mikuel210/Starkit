@@ -6,12 +6,15 @@
 - [x] Choose servos
 - [x] Choose motors, propellers and ESCs
 - [x] Choose batteries and charger
-- [ ] Create BOM
-- [ ] Design PCB
+- [x] Create BOM
+- [x] Design PCB
+- [ ] Revision
 - [ ] Update servo mounts to use a glued part that bolts into the thing
 - [ ] Prototype attachments and servo mounts
 - [ ] How am I going to cut the rods
 - [ ] How am I going to build the test stand
+- [ ] Stuff in the diary
+- [ ] RC groups feedback
 
 ## After submitting
 
@@ -20,12 +23,14 @@
 
 ## After getting the grant
 
-- [ ] Buy and test avionics
-- [ ] Buy the rest of the parts
+- [ ] Buy everything except PCB
+- [ ] Test avionics
+- [ ] Remeasure parts and order PCB
 - [ ] Balance propellers
 - [ ] Test motors
 - [ ] Prototype battery and ESC mounts
 - [ ] Printing and assembly
 - [ ] Test stand assembly and PID tuning
+- [ ] Code
 - [ ] Countdown software
 - [ ] Maiden flight

@@ -276,12 +276,22 @@ Today I’ve created custom symbols for the ESP32, the buzzer and the MPU9250. W
 
 ## June 12: Starting the PCB layout
 
-Today I've created and downloaded most footprints and 3D models and I've placed them on the PCB layout. This is my first PCB and I really like how it's looking so far :)
-
-Next, I'll place the missing components and models and route the remaining traces.
+Today I've created and downloaded most footprints and 3D models and I've placed them on the PCB layout. This is my first PCB and I really like how it's looking so far. Next, I'll place the missing components and models and route the remaining traces.
 
 ![](Images/PCB3.png)
 
 ![](Images/PCB4.png)
 
 **Time spent: 6h**
+
+## June 13: Finishing the PCB
+
+Today I've finished making and downloading the remaining footprints and 3D models, arranging the components on the PCB, routing the remaining traces and making the silkscreen. With this the PCB is complete!
+
+Next, I'll finish the BOM and revise all components. After that I will send my project to online forums to make sure I haven't done any mistakes and that I have the most chances of succeeding.
+
+![](Images/PCB7.png)
+
+![](Images/PCB6.png)
+
+**Time spent: 5h**
