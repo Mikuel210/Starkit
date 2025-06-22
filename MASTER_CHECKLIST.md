@@ -8,12 +8,17 @@
 - [x] Choose batteries and charger
 - [x] Create BOM
 - [x] Design PCB
-- [ ] Revision
-- [ ] Update servo mounts to use a glued part that bolts into the thing
+- [x] Revision
+- [ ] Check diameter of launch mount rails
+- [x] Optimize PCB to use a single ESC pin and maybe use a 38 pin ESP
 - [ ] Prototype attachments and servo mounts
-- [ ] How am I going to cut the rods
+	- [ ] Maybe update servo mounts to use a glued part that bolts into the thing?
+- [x] How am I going to cut the rods
+	- Tape, hacksaw, 3D printed clamp, respirator
 - [ ] How am I going to build the test stand
+	- Wood, bearings and 3D prints
 - [ ] Stuff in the diary
+	- [ ] Rod locking to prints
 - [ ] RC groups feedback
 
 ## After submitting

@@ -4,8 +4,6 @@ author: "Miguel"
 description: "A thrust vector controlled electric model rocket designed for propulsive landings"
 created_at: "2025-05-20"
 ---
-**Total time spent: 56h 45min**
-
 ## May 22: Initial ideas and goal of the project
 
 I always like to begin engineering projects by setting a goal. For this project, my goal is the following:
@@ -256,7 +254,7 @@ With this, I've updated the CAD model to house the new components:
 
 ![](Images/CAD10.png)
 
-Next, I've begun making a BOM (Bill of Materials) so that I can keep track of the price and the weight of all components. I've also chosen a charger, a LiPo bag, a magnetic propeller balancer and extension cables and connectors:
+Next, I've begun making a BOM so that I can keep track of the price and the weight of all components. I've also chosen a charger, a LiPo bag, a magnetic propeller balancer and extension cables and connectors:
 
 ![](Images/BOM1.png)
 
@@ -295,3 +293,33 @@ Next, I'll finish the BOM and revise all components. After that I will send my p
 ![](Images/PCB6.png)
 
 **Time spent: 5h**
+
+## June 14: Making a Unity simulation
+
+My Internet decided not to work today so I started making a Unity simulation to better understand how the flight software would work. In the simulation, the rocket is capable of holding a predefined altitude and correcting its orientation with only the data that the real flight computer would have.
+
+The following days I will work on the BOM and I’ll continue with the simulation after getting the project approved.
+
+(Screenshot coming whenever I restore my Internet)
+
+**Time spent: 3h**
+
+## June 15 to 19: Updating the BOM
+
+Over the past few days I've revised every component of the BOM and added some that were missing. I've gone through every component, searched for cheaper and better alternatives, and I've updated their weight and price. I've ended up switching a few connectors, so I will have to update that in the PCB as well. My Internet is still dead on my main PC so I will update the components and reroute the traces as soon as I can.
+
+![](Images/BOM2.png)
+
+**Time spent: 10h 45min across all days**
+
+## June 21: Updating the PCB
+
+In a combination of luck, hours of troubleshooting and miraculous circumstances I've managed to restore Internet connection on my main PC at about 1kbps. I've sent the KiCad files to my email and managed to open them on another computer. 
+
+After that I've updated the connectors that I had changed and I've rerouted the traces. Not only does the new design look nicer but it also has enough space to fit a picture of a silly kitten (the name "Starkit" comes from my obsession with cats anyways). I have also exported the PCB 3D model and put it in the CAD model.
+
+![](Images/PCB8.png)
+
+![](Images/PCB9.png)
+
+**Time spent: 4h 30min**
