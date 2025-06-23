@@ -323,3 +323,17 @@ After that I've updated the connectors that I had changed and I've rerouted the 
 ![](Images/PCB9.png)
 
 **Time spent: 4h 30min**
+
+
+## June 22: Tweaks to the CAD model and asking for design feedback
+
+Today I've updated the CAD model slightly by adding bolts to lock carbon fiber rods to 3D prints, eliminating the need for glue. This should allow me to more easily replace rods or 3D printed parts when they break.
+
+![](Images/CAD11.png)
+
+After that I've written about the design of the rocket and asked for feedback on RC Groups, where there are people much more experienced than me that actually know what they're doing. With this I hope to make sure that I didn't make any major design flaw and that I have the most chances of succeeding.
+
+![](Images/Feedback.png)
+
+**Time spent: 3h 30min**
+
