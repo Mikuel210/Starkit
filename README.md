@@ -1,6 +1,45 @@
-# <center> Starkit </center>
+# Starkit
 
-<center>Starkit is a thrust vector controlled electric model rocket designed for propulsive landings</center>
+Starkit is a thrust vector controlled electric model rocket designed for propulsive landings
+
+![](Images/README1.png)
+
+![](Images/README2.png)
+
+![](Images/README3.png)
+
+## Project description
+
+I'm building an electric model rocket capable of taking off vertically, hovering and landing propulsively by using thrust vector control (TVC).
+
+- **Propulsion**: I'm using two counter rotating brushless motors and 7" propellers. Each motor is powered by its own 6S LiPo battery and 60A ESC.
+- **Avionics**: The main flight computer is an ESP32. I'm using an MPU9250 for orientation and a TF-Luna LiDAR for measuring altitude.
+- **Control**: I'm using four TVC vanes driven by four Corona DS918MG servos.
+- **Structure**: The structure is built from 5mm carbon fiber rods. The rods are locked into 3D printed structural parts that hold mounts to attach the components as well.
+- **Landing gear**: I'm using deployable landing gear, actuated by four SG90 servos. Each landing leg is made of a two part design that locks the leg in place once deployed.
+
+## Goal of the project
+
+**To learn and have fun by building an electric model rocket capable of lifting off, hovering and landing propulsively**
+
+I want to build a fully reusable vehicle capable of landing propulsively through thrust vector control. If the rocket is capable of performing a 1 meter hop and hover for 30 seconds, I will consider it a success.
+
+### Why I'm building this project
+
+- To learn about avionics and PCB design
+- To learn about software, communication and control systems
+- To learn about rocket design
+- To learn about CAD and project planning
+
+## PCB
+
+![](Images/PCB10.png)
+
+![](Images/PCB8.png)
+
+## Wiring diagram
+
+![](Images/WiringDiagram.png)
 
 ## BOM
 

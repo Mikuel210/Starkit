@@ -4,6 +4,8 @@ author: "Miguel"
 description: "A thrust vector controlled electric model rocket designed for propulsive landings"
 created_at: "2025-05-20"
 ---
+**Total time spent: 70h 45min**
+
 ## May 22: Initial ideas and goal of the project
 
 I always like to begin engineering projects by setting a goal. For this project, my goal is the following:
@@ -81,11 +83,11 @@ Placing the propellers one after the other would decrease thrust and efficiency.
 
 If I want to get as much thrust as possible in this configuration, I should use a higher pitch in the rear propeller. However, I don't think this is a good idea as there aren't many high pitch propeller options or test data, and using different propellers might cause them to rotate at different speeds, which could cause a torque in the vehicle.
 
-I'll have to do more research to figure this out, nonetheless I think counter-rotating propellers are a really good option.
-
 ![](Images/CoaxialTest.png)
 
 *Test showing the thrust of different propeller spacings and rear propeller pitch difference. Source: https://www.icas.org/icas_archive/ICAS2014/data/papers/2014_0072_paper.pdf According to https://drones.stackexchange.com/questions/1209/do-propellers-layered-on-top-of-each-other-have-twice-the-thrust-of-one-propelle, you can get almost the full thrust if you increase the pitch of the rear propeller.*
+
+I'll have to do more research to figure this out, nonetheless I think counter-rotating propellers are a really good option.
 
 **Time spent: 1h 30min**
 
@@ -103,7 +105,7 @@ I could test the thrust of the motors at different throttle levels to try and av
 
 ## May 27 Log 1: Deciding a motor configuration
 
-I've made a spreadsheet for calculating the Thrust to Weight Ratio (TWR) of a coaxial and a side by side configuration. 
+I've made a spreadsheet for calculating the thrust to weight ratio (TWR) of a coaxial and a side by side configuration. 
 
 For the coaxial configuration, I'm picturing a cylindrical structure with a propeller at the top and another at the bottom. For the side by side configuration, I'm thinking of 2 of such structures next to each other, with one propeller each. Note that this isn't necessarily the only way of placing the propellers one next to the other, but I want to keep a shape that can integrate nicely with a launch mount and a catch tower.
 
@@ -156,7 +158,7 @@ After looking at some other projects I've come up with a design that would be re
 
 Similar to the image, landing legs in my rocket would have 2 carbon fiber struts with a 3D print at the top. A single strut would be pulled by a tension spring (a rubber band in the image) and would snap into the 3D print when deployed, locking the leg in place. Landing legs would be held in place with servos before deployment.
 
-I will go with 4 landing legs. It's what I've seen being done the most and I think it's a nice spot for stability without much weight.
+I will go with 4 landing legs. It's what I've seen being done the most and I think it's a nice spot between stability and weight.
 
 **Time spent: 1h 15min**
 
@@ -176,7 +178,7 @@ Today I've finished making the landing legs. I've added stoppers and bolts that 
 
 I've also added the struts that will hold the bottom motor. These double as airflow straighteners, which probably isn't necessary. However I'm doing that on the top motor for feeding the bottom motor cleaner air, and I prefer to do it in both to ensure both motors behave the same and no torque is created.
 
-Finally, I've began making the part that will join the bottom and top rods of the main structure. This allow me to buy shorter rods which I've seen are the cheapest option, and this also makes the rods flex less. This part will hold the servos that hold the landing legs in place too. 
+Finally, I've begun making the part that will join the bottom and top rods of the main structure. This allows me to buy shorter rods which I've seen are the cheapest option, and this also makes the rods flex less. This part will hold the servos that hold the landing legs in place too. 
 
 ![](Images/CAD2.png)
 
@@ -186,9 +188,9 @@ Finally, I've began making the part that will join the bottom and top rods of th
 
 ## June 1: Adding servo attachments
 
-I didn't have a lot of time today but I've figured out how to attach the servos for deploying the legs. The servos snap into some slots and are then secured with two bolts.
+I didn't have a lot of time today but I've figured out how to attach the servos for deploying the legs to the 3D printed part. The servos snap into some slots and are then secured with two bolts.
 
-Now, I only have to add holes for using a zip tie to attach the two parts of each landing leg. This way both can stay in place with a single servo. With this the leg deployment mechanism would be complete.
+Now, I only have to add holes to the landing pads for using a zip tie to attach the two parts of each landing leg. This way both can stay in place with a single servo. With this the leg deployment mechanism would be complete.
 
 ![](Images/CAD4.png)
 
@@ -199,9 +201,9 @@ Now, I only have to add holes for using a zip tie to attach the two parts of eac
 
 I should have probably checked how much carbon fiber rods flex at different diameters before starting the CAD model. It's really bad at 3mm. I've changed most rods to 5mm which should work a lot better.
 
-I've also redesigned the tip of the landing legs. This allows for them to be held closer to the structure before deployment, and it should also improve the reliability of the two parts of the legs locking together. I've also added a ring that attaches the two parts of landing legs, avoiding the need of using a zip tie.
+I've also redesigned landing pads. This allows for them to be held closer to the structure before deployment, and it should also improve the reliability of the two parts of the legs locking together. I've also added a ring that attaches the two parts of landing legs, avoiding the need of using a zip tie.
 
-With this I've finished making the leg deployment mechanism. Next, I'll make the part for holding the upper motor and TVC servos. I also plan on prototyping servo attachments soon to make sure the friction from the bolts is strong enough to hold a servo in place.
+With this I've finished making the leg deployment mechanism. Next, I'll make the part for holding the upper motor and TVC servos.
 
 ![](CAD6.png)
 
@@ -274,7 +276,7 @@ Today I’ve created custom symbols for the ESP32, the buzzer and the MPU9250. W
 
 ## June 12: Starting the PCB layout
 
-Today I've created and downloaded most footprints and 3D models and I've placed them on the PCB layout. This is my first PCB and I really like how it's looking so far. Next, I'll place the missing components and models and route the remaining traces.
+Today I've created or downloaded most footprints and 3D models and I've placed them on the PCB layout. This is my first PCB and I really like how it's looking so far. Next, I'll place the missing components and models and route the remaining traces.
 
 ![](Images/PCB3.png)
 
@@ -316,7 +318,7 @@ Over the past few days I've revised every component of the BOM and added some th
 
 In a combination of luck, hours of troubleshooting and miraculous circumstances I've managed to restore Internet connection on my main PC at about 1kbps. I've sent the KiCad files to my email and managed to open them on another computer. 
 
-After that I've updated the connectors that I had changed and I've rerouted the traces. Not only does the new design look nicer but it also has enough space to fit a picture of a silly kitten (the name "Starkit" comes from my obsession with cats anyways). I have also exported the PCB 3D model and put it in the CAD model.
+After that I've updated the connectors that I had changed and I've rerouted the traces. Not only does the new design look nicer but it also has enough space to fit a picture of a silly kitten (the name "Starkit" comes from my obsession with cats anyways). I have also exported the PCB 3D model and attached it to its mount in the CAD model.
 
 ![](Images/PCB8.png)
 
@@ -337,3 +339,14 @@ After that I've written about the design of the rocket and asked for feedback on
 
 **Time spent: 3h 30min**
 
+## June 23: Preparations for submitting
+
+People in RC Groups haven't spotted any major design flaws so far, so today I have started preparing my project for submission!
+
+First, I have converted the BOM to CSV format and uploaded it to the project repo. Next, I have moved all of the PCB dependencies to a single folder and uploaded the KiCAD project to GitHub as well. Finally, I have updated the README following all of the submission requirements, including making a wiring diagram:
+
+![](Images/WiringDiagram.png)
+
+Finally, I have posted the project in #highway-pitstop and I'll see how it goes!
+
+**Time spent: 3h**
