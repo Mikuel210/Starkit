@@ -16,7 +16,8 @@ I want to build a fully reusable vehicle capable of landing propulsively through
 
 Based on my vision for this project, I've set some design requirements. This way, I will try to find the most efficient and cost-effective way possible of creating something that I'll be happy with:
 
-## Design requirements
+### Design requirements
+
 These are the absolute musts that a design should have:
 
 - The rocket is powered by electric propulsion for cheap and safe flights and fast turnarounds
@@ -31,13 +32,13 @@ These are the absolute musts that a design should have:
 		- The rocket has got detachable or deployable landing legs and attachable catch pins
 		- The pad should be able to hold the rocket until full throttle is reached
 
-## Dream goals
+### Dream goals
+
 These are not essential but they'd be cool to have:
 
 - The rocket can perform a 10 meter hop
 - The rocket can hover for a minute
 - The rocket looks as cool as possible
-
 
 ![](Images/Sketches.png)
 
