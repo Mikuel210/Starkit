@@ -15,6 +15,7 @@ I'm building an electric model rocket capable of taking off vertically, hovering
 - **Propulsion**: I'm using two counter rotating brushless motors and 7" propellers. Each motor is powered by its own 6S LiPo battery and 60A ESC.
 - **Avionics**: The main flight computer is an ESP32. I'm using an MPU9250 for orientation and a TF-Luna LiDAR for measuring altitude.
 - **Control**: I'm using four TVC vanes driven by four Corona DS918MG servos.
+- **Software**: I'm using PID algorithms for controlling orientation and altitude.
 - **Structure**: The structure is built from 5mm carbon fiber rods. The rods are locked into 3D printed structural parts that hold mounts to attach the components as well.
 - **Landing gear**: I'm using deployable landing gear, actuated by four SG90 servos. Each landing leg is made of a two part design that locks the leg in place once deployed.
 
