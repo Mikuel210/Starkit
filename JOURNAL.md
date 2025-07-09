@@ -16,7 +16,7 @@ I want to build a fully reusable vehicle capable of landing propulsively through
 
 Based on my vision for this project, I've set some design requirements. This way, I will try to find the most efficient and cost-effective way possible of creating something that I'll be happy with:
 
-## Design requirements
+### Design requirements
 These are the absolute musts that a design should have:
 
 - The rocket is powered by electric propulsion for cheap and safe flights and fast turnarounds
@@ -31,7 +31,7 @@ These are the absolute musts that a design should have:
 		- The rocket has got detachable or deployable landing legs and attachable catch pins
 		- The pad should be able to hold the rocket until full throttle is reached
 
-## Dream goals
+### Dream goals
 These are not essential but they'd be cool to have:
 
 - The rocket can perform a 10 meter hop
@@ -350,3 +350,36 @@ First, I have converted the BOM to CSV format and uploaded it to the project rep
 Finally, I have posted the project in #highway-pitstop and I'll see how it goes!
 
 **Time spent: 3h**
+
+***
+
+# After getting approved
+
+## July 3: Buying the parts!
+
+I've got approved and I've just received the grant! Today I've checked which parts I could buy and receive in time before my trip and I've ended up buying the batteries and the LiPo bags.
+
+**Time spent: 1h**
+
+## July 4 to 6: The first parts have arrived
+
+Over the past few days I've received the batteries and LiPo bags and I've uploaded their receipts to HCB!
+
+![](Images/Parts1.jpg)
+
+## July 8: Prototyping servo mounts
+
+Today I printed the landing leg servo mounts to see how they would behave.
+
+![](Images/Prints1.jpg)
+
+Turns out, not really great. I was hoping for the friction from the bolts to prevent the servo from slipping, but this is not the case. In this prototype, the print can bend slightly, which wouldn't happen in the real thing, potentially increasing the friction. However, I've decided to redesign the servo mounts to make sure the servo will stay securely in place.
+
+
+
+
+
+11 to 15  (-5min whatever)
+
+16 to 16 45
+
