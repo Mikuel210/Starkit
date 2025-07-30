@@ -4,6 +4,7 @@ author: "Miguel"
 description: "A thrust vector controlled electric model rocket designed for propulsive landings"
 created_at: "2025-05-20"
 ---
+
 **Total time spent: 70h 45min**
 
 ## May 22: Initial ideas and goal of the project
@@ -17,35 +18,38 @@ I want to build a fully reusable vehicle capable of landing propulsively through
 Based on my vision for this project, I've set some design requirements. This way, I will try to find the most efficient and cost-effective way possible of creating something that I'll be happy with:
 
 ### Design requirements
+
 These are the absolute musts that a design should have:
 
 - The rocket is powered by electric propulsion for cheap and safe flights and fast turnarounds
 - The rocket is fully reusable and uses thrust vectoring to lift off, hover and land propulsively
 - The rocket can perform a 1 meter hop and hover for 30 seconds
 - The rocket is modular
-	- Components are easily accessible and replaceable
-	- The rocket is designed for a future launchpad integration
-	  
-	  *If I achieve reliable landings, I might try to build a launchpad to launch and catch the rocket from. The rocket should be modular and be designed with this in mind.*
 
-		- The rocket has got detachable or deployable landing legs and attachable catch pins
-		- The pad should be able to hold the rocket until full throttle is reached
+  - Components are easily accessible and replaceable
+  - The rocket is designed for a future launchpad integration
+
+    _If I achieve reliable landings, I might try to build a launchpad to launch and catch the rocket from. The rocket should be modular and be designed with this in mind._
+
+    - The rocket has got detachable or deployable landing legs and attachable catch pins
+    - The pad should be able to hold the rocket until full throttle is reached
 
 ### Dream goals
+
 These are not essential but they'd be cool to have:
 
 - The rocket can perform a 10 meter hop
 - The rocket can hover for a minute
 - The rocket looks as cool as possible
 
-
 ![](Images/Sketches.png)
 
-*Initial ideas and concepts of possible designs*
+_Initial ideas and concepts of possible designs_
 
 **Time spent: 1h 15min**
 
 ## May 24 Log 1: Research on propulsion systems
+
 I've decided to choose a propulsion system first and then work around that. Some options I think would fit this project are:
 
 - Single EDF (Electric Ducted Fan)
@@ -73,19 +77,19 @@ The reasons I would choose counter-rotating propellers over a single propeller a
 
 ![](Images/Ikarus.png)
 
-*The Ikarus model rocket had an issue where whenever it wanted to apply a torque through TVC, it had to apply a perpendicular torque as well due to the gyroscopic effects of a single propeller. In the Ikarus II rocket this problem was solved by using counter-rotating EDFs.*
+_The Ikarus model rocket had an issue where whenever it wanted to apply a torque through TVC, it had to apply a perpendicular torque as well due to the gyroscopic effects of a single propeller. In the Ikarus II rocket this problem was solved by using counter-rotating EDFs._
 
 Placing the propellers one after the other would decrease thrust and efficiency. However, if I keep the propellers spaced and use airflow straighteners for feeding the second propeller cleaner air, this could be mitigated.
 
 ![](Images/Efficiency.png)
 
-*Test on the efficiency of normal, overlapping and coaxial propellers. Coaxial propellers are about 80% of the efficiency at a low spacing. Source: https://www.youtube.com/watch?v=tFJyE3Uns3o*
+_Test on the efficiency of normal, overlapping and coaxial propellers. Coaxial propellers are about 80% of the efficiency at a low spacing. Source: https://www.youtube.com/watch?v=tFJyE3Uns3o_
 
 If I want to get as much thrust as possible in this configuration, I should use a higher pitch in the rear propeller. However, I don't think this is a good idea as there aren't many high pitch propeller options or test data, and using different propellers might cause them to rotate at different speeds, which could cause a torque in the vehicle.
 
 ![](Images/CoaxialTest.png)
 
-*Test showing the thrust of different propeller spacings and rear propeller pitch difference. Source: https://www.icas.org/icas_archive/ICAS2014/data/papers/2014_0072_paper.pdf According to https://drones.stackexchange.com/questions/1209/do-propellers-layered-on-top-of-each-other-have-twice-the-thrust-of-one-propelle, you can get almost the full thrust if you increase the pitch of the rear propeller.*
+_Test showing the thrust of different propeller spacings and rear propeller pitch difference. Source: https://www.icas.org/icas_archive/ICAS2014/data/papers/2014_0072_paper.pdf According to https://drones.stackexchange.com/questions/1209/do-propellers-layered-on-top-of-each-other-have-twice-the-thrust-of-one-propelle, you can get almost the full thrust if you increase the pitch of the rear propeller._
 
 I'll have to do more research to figure this out, nonetheless I think counter-rotating propellers are a really good option.
 
@@ -105,7 +109,7 @@ I could test the thrust of the motors at different throttle levels to try and av
 
 ## May 27 Log 1: Deciding a motor configuration
 
-I've made a spreadsheet for calculating the thrust to weight ratio (TWR) of a coaxial and a side by side configuration. 
+I've made a spreadsheet for calculating the thrust to weight ratio (TWR) of a coaxial and a side by side configuration.
 
 For the coaxial configuration, I'm picturing a cylindrical structure with a propeller at the top and another at the bottom. For the side by side configuration, I'm thinking of 2 of such structures next to each other, with one propeller each. Note that this isn't necessarily the only way of placing the propellers one next to the other, but I want to keep a shape that can integrate nicely with a launch mount and a catch tower.
 
@@ -154,7 +158,7 @@ After looking at some other projects I've come up with a design that would be re
 
 ![](Images/LandingLegs.png)
 
-*Landing legs of the Scout F rocket by BPS.space*
+_Landing legs of the Scout F rocket by BPS.space_
 
 Similar to the image, landing legs in my rocket would have 2 carbon fiber struts with a 3D print at the top. A single strut would be pulled by a tension spring (a rubber band in the image) and would snap into the 3D print when deployed, locking the leg in place. Landing legs would be held in place with servos before deployment.
 
@@ -174,11 +178,11 @@ I made a new Onshape document and began designing the base of the vehicle. I've 
 
 ## May 31: Landing legs are finished
 
-Today I've finished making the landing legs. I've added stoppers and bolts that will allow the parts to rotate into place. 
+Today I've finished making the landing legs. I've added stoppers and bolts that will allow the parts to rotate into place.
 
 I've also added the struts that will hold the bottom motor. These double as airflow straighteners, which probably isn't necessary. However I'm doing that on the top motor for feeding the bottom motor cleaner air, and I prefer to do it in both to ensure both motors behave the same and no torque is created.
 
-Finally, I've begun making the part that will join the bottom and top rods of the main structure. This allows me to buy shorter rods which I've seen are the cheapest option, and this also makes the rods flex less. This part will hold the servos that hold the landing legs in place too. 
+Finally, I've begun making the part that will join the bottom and top rods of the main structure. This allows me to buy shorter rods which I've seen are the cheapest option, and this also makes the rods flex less. This part will hold the servos that hold the landing legs in place too.
 
 ![](Images/CAD2.png)
 
@@ -193,7 +197,6 @@ I didn't have a lot of time today but I've figured out how to attach the servos 
 Now, I only have to add holes to the landing pads for using a zip tie to attach the two parts of each landing leg. This way both can stay in place with a single servo. With this the leg deployment mechanism would be complete.
 
 ![](Images/CAD4.png)
-
 
 **Time spent: 2h**
 
@@ -216,7 +219,6 @@ Today I've made the top assembly that holds the upper motor and the 4 servos wit
 Next I'll make mounts for the batteries, ESCs, PCB and motors (right now they're on top of the struts and they need a mount to be screwed on). With this I should be able to slice the models to know their weight and calculate the TWR of the rocket.
 
 ![](Images/CAD7.png)
-
 
 **Time spent: 3h 30min**
 
@@ -316,7 +318,7 @@ Over the past few days I've revised every component of the BOM and added some th
 
 ## June 21: Updating the PCB
 
-In a combination of luck, hours of troubleshooting and miraculous circumstances I've managed to restore Internet connection on my main PC at about 1kbps. I've sent the KiCad files to my email and managed to open them on another computer. 
+In a combination of luck, hours of troubleshooting and miraculous circumstances I've managed to restore Internet connection on my main PC at about 1kbps. I've sent the KiCad files to my email and managed to open them on another computer.
 
 After that I've updated the connectors that I had changed and I've rerouted the traces. Not only does the new design look nicer but it also has enough space to fit a picture of a silly kitten (the name "Starkit" comes from my obsession with cats anyways). I have also exported the PCB 3D model and attached it to its mount in the CAD model.
 
@@ -325,7 +327,6 @@ After that I've updated the connectors that I had changed and I've rerouted the 
 ![](Images/PCB9.png)
 
 **Time spent: 4h 30min**
-
 
 ## June 22: Tweaks to the CAD model and asking for design feedback
 
@@ -351,7 +352,7 @@ Finally, I have posted the project in #highway-pitstop and I'll see how it goes!
 
 **Time spent: 3h**
 
-***
+---
 
 # After getting approved
 
@@ -375,11 +376,96 @@ Today I printed the landing leg servo mounts to see how they would behave.
 
 Turns out, not really great. I was hoping for the friction from the bolts to prevent the servo from slipping, but this is not the case. In this prototype, the print can bend slightly, which wouldn't happen in the real thing, potentially increasing the friction. However, I've decided to redesign the servo mounts to make sure the servo will stay securely in place.
 
+![](Images/Prints2.jpg)
 
+In the new design, the servo is pasted into a mount which can be bolted into the rocket's structure. This allows for easy replacement in case something breaks.
 
+![](Images/Prints3.jpg)
 
+I printed a small section of the structure, which includes attachments for the rods which I plan on testing once I buy them. The bolts couldn't get in and I realized the rod attachments could flex, so I've made the necessary adjustments in the CAD model.
 
-11 to 15  (-5min whatever)
+**Time spent: 6h**
 
-16 to 16 45
+## July 15: Adding items to my cart
 
+Today I've added the items on AliExpress to my cart so that I can buy them when the shipping date is when I'm home.
+
+**Time spent: 45min**
+
+## July 21: Buying more parts
+
+Today I've bought the carbon fiber rods, the IMU, the motors and the TVC servos.
+
+Before buying them, I realized that the IMU had no reviews. Amazon, where I was planning to buy it, is plagued with fake MPU-9250s without magnetometers. For that reason I searched for other sellers and I found one on AliExpress with good reviews and a similar price that explicitly stated it used the original sensor with the magnetometer. I talked with my reviewer about the change, and after getting approved I bought all the parts!
+
+**Time spent: 1h 15min**
+
+## July 23: Attempting to buy more parts
+
+Today I planned on buying the remaining items on AliExpress. I had already added them to my cart, and there happened to be a huge sale running that allowed me to get the LiPo charger for half the price. Now I just had to pay, or so I thought.
+
+When I tried to pay, AliExpress declined my card for "security reasons". However it still had placed the order but I had to pay it within a certain timespan if I didn't want to get it cancelled. So I went through every one of the items and paid for them, except for the ESCs, the charger, the LiDAR and the leg springs, which I still couldn't pay. I kept trying and I eventually could pay the springs. Except because AliExpress chose to cancel my order right afterwards and now a refund will take 3 to 15 business days.
+
+At this point it was 12PM and I decided to continue trying the day after. This meant that the order for the LiDAR would be cancelled, but that's fine as I didn't get any discounts on it. If I don't manage to pay for the charger tomorrow though I will lose $12 as I used my discount for that.
+
+**Time spent: 1h 30min**
+
+## July 24: Paying for the remaining parts
+
+Today I attempted to pay for the remaining parts but it kept failing. As a last resort I called my father and we ended up opening a new PayPal account linked to the HCB card. This finally worked, and after paying for the ESCs and charger I ordered the remaining parts which I couldn't buy yesterday: the springs, the LiDAR and cables, which I couldn't add to my cart in the first place because of my order being too large.
+
+I also noticed I had received the reimbursement from AliExpress, the one that allegedly would take 3 to 15 business days. Anyways the only things left to buy now are the propellers and the magnetic balancer. Except because I found out the store from which I was going to buy the propellers from doesn't ship anywhere at all, but that's a future me problem.
+
+**Time spent: 1h**
+
+## July 25: Finding new propellers
+
+Today I wanted to buy the propellers, so I started looking for other sellers that would ship to my location. However, there weren't many as the propeller I chose is discontinued, and the only ones that I could find were way more expensive. I chose this propeller because of the availability of test data with the motors I'm using, but I started to look for other options. After some time I found out that the manufacturer of the propellers had made an updated version. Although I don't have test data for it, it should behave roughly the same. I found the propeller on Banggood at a good price, and I bought it after talking with my reviewer about the change.
+
+**Time spent: 1h 15min**
+
+## July 26: Buying the propeller balancer
+
+Today I bought the propeller balancer and for once everything went according to plan. The only thing left to buy now is the PCB, which I'll do once I test the avionics.
+
+## July 28: More parts have arrived!
+
+Today the carbon fiber rods and the IMU have arrived!
+
+![](Images/Parts2.jpg)
+
+## July 29 Log 1: The whole AliExpress warehouse has arrived at my room
+
+![](Images/Parts3.jpg)
+
+I'm not even going to try to list everything that has arrived today. It's just insane to think that I got all of this for free.
+
+![](Images/Parts4.jpg)
+
+After checking that everything was in a good state (and realizing that the AC cable for the charger had the wrong plug - thankfully I had spares), I organized everything into bags with different categories and all of that went into a box for everything Starkit.
+
+**Time spent: 2h + 2h 30min organizing the rest of my electronics**
+
+## July 29 Log 2: Testing the ESP32
+
+The only thing left to buy is the PCB, but before I do that I have to verify that everything works fine as it is connected in the schematic. However, I decided to test every system in the avionics separately before assembling the whole circuit.
+
+I had only worked with Arduinos before, not ESP32s, so I started by testing uploading an sketch to the ESP32 first. I followed through a 20 minute video on how to setup PlatformIO for ESP32 development. I installed the necessary drivers and adjusted the PlatformIO project settings but nothing worked at all. I tested different cables and different sketches but still I couldn't get it to work. Then I followed through a 1 minute video on how to setup Arduino IDE for ESP32. It worked on the first try an I got an LED to blink:
+
+![](Images/Avionics1.jpg)
+
+**Time spent: 1h 15min**
+
+## July 30: Testing the LiDAR and the TVC servos
+
+I started by testing the LiDAR with the ESP32. In the real thing, the LiDAR is powered by the BEC output of one of the ESCs. As the ESP32 is a 3V3 device, I had to use an Arduino UNO to provide the power. I made the following circuit:
+
+![](Images/Avionics2.jpg)
+
+After finding the right library and tweaking it to work with an ESP32, I got it to work pretty well.
+
+Next, I tested the TVC servos. I used the same system in which I get the power from an Arduino but all processing happens on the ESP32. I got it working in no time and I was honestly surprised with their speed. A huge upgrade over the SG90s I had always worked with.
+
+![](Images/Avionics3.jpg)
+
+**Time spent: 2h 45min**
