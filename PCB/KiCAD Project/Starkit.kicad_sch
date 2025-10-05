@@ -4566,7 +4566,7 @@
 		)
 		(uuid "0cccaea9-6b78-4e62-a799-eccd303f63f6")
 	)
-	(label "LiDAR_DATA"
+	(label "SDA"
 		(at 135.89 82.55 0)
 		(effects
 			(font
@@ -4606,7 +4606,7 @@
 		)
 		(uuid "1d551441-c7da-4d0e-945a-520e72a9d242")
 	)
-	(label "IMU_DATA"
+	(label "SDA"
 		(at 146.05 39.37 0)
 		(effects
 			(font
@@ -4636,17 +4636,7 @@
 		)
 		(uuid "3b5bb234-11cc-4a43-ae8c-b45e88067312")
 	)
-	(label "LiDAR_CLOCK"
-		(at 109.22 107.95 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "3d999acc-33f7-4685-be18-d76e9b354c80")
-	)
-	(label "IMU_CLOCK"
+	(label "SCL"
 		(at 109.22 87.63 0)
 		(effects
 			(font
@@ -4665,16 +4655,6 @@
 			(justify left bottom)
 		)
 		(uuid "409fa172-2b32-4e10-b912-e3e4e2fa25dd")
-	)
-	(label "LiDAR_DATA"
-		(at 109.22 110.49 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "43ac6400-61e3-43d8-8f2e-74d3f932a6a4")
 	)
 	(label "12"
 		(at 68.58 113.03 180)
@@ -4696,7 +4676,7 @@
 		)
 		(uuid "4886fd66-29d0-466e-a66b-c8c2677d77c1")
 	)
-	(label "LiDAR_CLOCK"
+	(label "SCL"
 		(at 138.43 85.09 0)
 		(effects
 			(font
@@ -4726,7 +4706,7 @@
 		)
 		(uuid "581623e6-0be4-4dc8-bd07-f81a09d6a606")
 	)
-	(label "IMU_CLOCK"
+	(label "SCL"
 		(at 130.81 44.45 180)
 		(effects
 			(font
@@ -4766,7 +4746,7 @@
 		)
 		(uuid "5d96d82b-9616-4b62-a94f-45f3f55e3f07")
 	)
-	(label "IMU_DATA"
+	(label "SDA"
 		(at 109.22 95.25 0)
 		(effects
 			(font

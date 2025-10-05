@@ -5,8 +5,6 @@ description: "A thrust vector controlled electric model rocket designed for prop
 created_at: "2025-05-20"
 ---
 
-**Total time spent: 70h 45min**
-
 ## May 22: Initial ideas and goal of the project
 
 I always like to begin engineering projects by setting a goal. For this project, my goal is the following:
@@ -468,4 +466,128 @@ Next, I tested the TVC servos. I used the same system in which I get the power f
 
 ![](Images/Avionics3.jpg)
 
-**Time spent: 2h 45min**
+Finally, I soldered the IMU so that I can test it tomorrow.
+
+**Time spent: 3hmin**
+
+
+## July 31: Testing the IMU and the BMS
+
+Today I wanted to test the two final subsystems of the avionics, the Inertial Measurement Unit and the Battery voltage Measurement System (get it???).
+
+I wired the IMU up but when writing the code I realized I didn't even know what an I2C address was so I decided to do some research on how that works. And I learned that you can connect multiple devices to the same bus with only two wires. I just for some reason assumed each device needed two wires each. I decided to wire the LiDAR as well to the same bus, and after installing the necessary libraries and making the code, I got both the LiDAR and the IMU to work at the same time.
+
+![](Images/Avionics4.jpg)
+
+After that I installed a sensor fusion library and to my surprise it worked on the first try. It needed a bit of calibration on the raw IMU values for it not to drift over time, but the fact that I got sensor fusion to work so quickly is insane to me.
+
+Next I updated the PCB to use a single I2C bus, as it simplifies the code, frees up pins and for my application it works the same. 
+
+After that I tested the final subsystem, the BMS. It uses two 10kΩ resistors to divide the voltage of the first cell of each battery, so that the ESP32 can read it. After calibrating it I got it to work well at 5V and 3V3.
+
+![](Images/Avionics5.jpg)
+
+Finally I started working on making the full circuit, for which I planned to use the actual BEC outputs of the ESCs. However I forgot that without the motors connected (which I have to solder the connectors for) the ESCs can't make sounds and I can't calibrate them or configure them at different voltages. In the end I chose to not test the full circuit, as I've verified that every subsystem works and I prefer to solder the motor cables and connectors later on when the vehicle is assembled, so that I can choose the most optimal cable length.
+
+**Time spent: 3h 30min**
+
+## August 2 Log 1: More testing + Updating and ordering the PCB
+
+Today I tested the LiDAR and the IMU again because I wanted to make sure that getting the data and performing sensor fusion wouldn't take over 20ms, which is the loop time the flight computer will be running at. At 400kHz of I2C clock speed it took only 2.5ms. The LiDAR allegedly only worked up to 250kHz but if it works it works.
+
+Next, I made sure the dimensions and hole sizes for all the parts were correct on the PCB. I noticed that I had soldered the IMU headers with a slight slant so I wanted to solder the female headers on the PCB at an angle to compensate it. For that I needed to have the same hole size than in the IMU to align the headers, so I measured it on some pictures I found of the IMU and it appears to be 1.2mm.
+
+Finally, I added the PCB to my cart on JLCPCB. I planned to buy it out of my own money, but as I updated some components and caught a discount on AliExpress I had enough money on the grant card to buy it. I talked to my reviewer about it and I got approved so I will buy it soon.
+
+**Time spent: 3h**
+
+## August 2 Log 2: More testing again
+
+I realized on the rocket the LiDAR would be 50cm apart from the PCB, whereas the IMU would be mounted on it. This could cause issues when both are in the same bus, specially when running the LiDAR over its rated clock speed. I should have probably just used two buses and change the code of the libraries to work like that. Still I assembled the circuit again to test it with longer wires, and it still worked flawlessly.
+
+**Time spent: 30min**
+
+## August 5: Ordering the PCB
+
+Today I ordered the PCB! Before that I changed the silkscreen slightly and I think it looks much better now.
+
+![](Images/PCB14.png)
+
+**Time spent: 30min**
+
+## August 20: The PCB has arrived!
+
+The PCB has arrived today! It looks so sick
+
+![](Images/PCB11.jpg)
+
+
+## August 22: Leg development
+
+I've decided for my next project to be prototyping the landing legs. When making the CAD model I initially thought I could figure out how to cut the leg struts to be 45cm long, which allowed them to fit better with the deployable landing leg design. However, I decided to ditch that idea as I don't have a proper setup to cut them on. Carbon fiber can be pretty hazardous if gets into your lungs, eyes or skin, so I don't feel it would be wise to try cutting it without the necessary equipment.
+
+![](Images/Leg2.png)
+
+Today I changed the design to work with 50cm struts. This makes the design heavier, but I still have plenty of weight budget to work with. Next, I started printing the parts to assemble a test leg. I sent the print job, and after a bed adhesion failure and some tweaking to the slicer settings, I got the first part of the assembly printed. I had tested the tolerances for the rods, but on my new part there was no way to get the rods in. Apparently printing orientation also plays an important role on the fit. I tried making the whole larger with no success, so I'll reprint the part tomorrow.
+
+![](Images/Leg1.jpg)
+
+**Time spent: 2h**
+
+## August 23: Leg development
+
+Today I made a test piece to dial in the tolerance of the rods on that orientation. After knowing the optimal tolerance, I printed the part again. The rods got in, except because I quickly realized I had only changed one of the rods to be 50cm in the CAD model and I completely forgot that wasn't the only one I had planned on cutting.
+
+I updated the design and printed it once again, except because only the fact that the hole was longer on the new design increased the friction enough to make fitting the rods impossible. At this point I had spent 90g of filament already so I really needed for my next attempt to go right. I dried the filament and printed more test pieces, and I think I dialed in the tolerance for this length, but I'll have to dry the filament more to get rid of all the bubbles which I think are currently preventing the rod from getting all the way through.
+
+## August 24: Leg development
+
+I think one of the reasons I had so much trouble yesterday is because I was constantly multitasking. When I had an issue, instead of reflecting on it I just tried random fixes and hit print, then went to work on other projects. While I might do other stuff when a part is being printed, I should have really reflected on my failures and worked on focused sessions to update the design.
+
+Today, after drying the filament overnight, I printed more test pieces and after really making sure everything was right, I printed the full part. Except, guess what, it didn't fit yet again. For whatever reason, the same printing orientation, the same dimensions and the same slicer settings don't recreate the same hole on test pieces and on the real part. At this point I was kind of going insane so I just hit print again with more tolerance, but I paused the print at a few millimeters to test the fit before printing the full thing. Finally, after 120+ grams of filament and 2 rods that were sacrificed on test fits, I got the part to work. Going forward, having learnt how unpredictable this can be I will just make holes slightly oversized and use another locking mechanism such as hot glue, which would lock the rods firmly in place but also allows for remelting it if needed. It feels bad to have wasted so much material but at the same time the lessons I learnt cost much more than that.
+
+After finally getting that part right, I printed the rest of parts of the assembly and the process was much more straightforward. The only thing left now is assembling everything.
+
+![](Images/Leg3.jpg)
+
+**Time spent 2h 30min**
+
+## August 25: Assembling the landing leg + Leg deployment mechanism
+
+Today I assembled the landing leg prototype! Everything works as expected. Next, I printed the assembly that holds the servo to control the leg deployment. I had printed this previously to test the servo mounts but I'm printing it again with the changes I implemented. With this, I made a simple circuit to control the servo and I did my first ever leg deployment test.
+
+![](Images/LegDeploymentTest.mp4)
+
+**Time spent: 3h**
+
+## August 29: Fixing the leg deployment mechanism
+
+Today I wanted to fix a problem with the leg prototype that made the leg randomly deploy at times. The servo arm that held the leg in place before deployment wasn't long enough to account for the flex of the rod, so some movements and vibrations might flex the rod enough for the leg to deploy. To fix this, I printed a part that snaps into the servo arm to extend it. After a couple iterations I got it right!
+
+![](Images/Leg4.jpg)
+
+After that, I cut some connectors to length to solder them to the PCB tomorrow.
+
+**Time spent: 4h**
+
+## August 30: Soldering the PCB
+
+Today I started soldering the PCB!
+
+**Time spent: 3h 15min**
+
+## October 2nd: Soldering the remaining components
+
+Today I soldered the remaining components to the PCB and I'm really happy with the result!
+
+![](Images/PCB13.jpg)
+
+**Time spent: 2h 30min**
+
+## October 3rd: Testing the PCB
+
+Today I've tested all systems on the PCB except the BMS and the servos, which I will test soon. Again, I'm using an Arduino to provide the input voltage. This will be done by the ESCs on the real thing. Amazingly, everything worked flawlessly on the first try.
+
+![](Images/PCB12.jpg)
+
+**Time spent: 1h 15min**
