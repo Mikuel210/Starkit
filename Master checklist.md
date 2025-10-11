@@ -23,7 +23,7 @@
 ## After submitting
 
 - [-] Check diameter of launch mount rails
-- [/] Prototype attachments and servo mounts
+- [x] Prototype attachments and servo mounts
 	- [x] Update servo mounts to use a glued part that bolts into the thing
 
 ## After getting the grant
@@ -37,7 +37,7 @@
 	- [-] Make PCB circuit
 - [x] Measure parts and order PCB (w/ conformal coating)
 - [x] Solder PCB
-	- Make sure to angle the IMU headers at an angle
+	- [x] Make sure to angle the IMU headers at an angle
 - [x] Prototype legs
 	- [x] Change design to use bend & 500mm rods
 	- [x] Update tolerances and spring thingies
@@ -52,14 +52,33 @@
 	- [ ] Consider foam to reduce vibrations
 	- [x] Paste rods to prints tentatively
 	- [x] Testing
-- [/] Test PCB
-- [ ] Prototype battery, motor, rod, LiDAR, vane and ESC mounts
+- [x] Test PCB
+- [x] Solve rod locking to prints. Test glue and bolt lock.
+	- [-] Test acetone for removing resin from rods
+- [/] Prototype battery, motor, rod, LiDAR, vane and ESC mounts
+	- [x] Battery mount
+	- [x] ESC mount
+	- [x] Is the cable long enough?
+	- [ ] LiDAR mount
+	- [x] Rod bolt attachment test
+	- [ ] Motor mount test
+	- [x] TVC vanes (already tested for servo arm extension)
+	- Conclusions
+		- [ ] Evaluate how much taller I can make the battery mount without interfering with the cables
+		- [ ] Evaluate velcro behavior
+		- [ ] Evaluate does the prop fit??
+		- I have to buy XT60 extenders because the cable isn't long enough and I don't have enough margin to move the mounts. A 3cm extension is fine (though I would check again before buying)
+		- Bolt locking rods is the new standard
+		- Required adjustments
+			- [ ] 0.5 tolerance for rods
+			- [ ] Bolt locking for all rods
+			- [ ] 1mm less width battery mount (?)
+			- [ ] 1mm more width ESC mount (or 2)
 - [ ] Test motors
 - [ ] Balance propellers
 - [ ] Test motors w/ propellers (@ 90% thrust, they can overheat)
-- [ ] Solve rod locking to prints. Test glue and bolt lock.
-	- [ ] Test acetone for removing resin from rods
 - [ ] Print another middle assembly section to test rod attachments and bolt tolerances
+- [ ] Decide if layout has to be changed
 - [ ] Printing and assembly
 - [ ] Test stand assembly and PID tuning
 - [ ] Flight software

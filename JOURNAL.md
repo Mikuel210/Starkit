@@ -528,7 +528,7 @@ I've decided for my next project to be prototyping the landing legs. When making
 
 ![](Images/Leg2.png)
 
-Today I changed the design to work with 50cm struts. This makes the design heavier, but I still have plenty of weight budget to work with. Next, I started printing the parts to assemble a test leg. I sent the print job, and after a bed adhesion failure and some tweaking to the slicer settings, I got the first part of the assembly printed. I had tested the tolerances for the rods, but on my new part there was no way to get the rods in. Apparently printing orientation also plays an important role on the fit. I tried making the whole larger with no success, so I'll reprint the part tomorrow.
+Today I changed the design to work with 50cm struts. This makes the design heavier, but I still have plenty of weight budget to work with. Next, I started printing the parts to assemble a test leg. I sent the print job, and after a bed adhesion failure and some tweaking to the slicer settings, I got the first part of the assembly printed. I had tested the tolerances for the rods, but on my new part there was no way to get the rods in. Apparently printing orientation also plays an important role on the fit. I tried making the hole larger with no success, so I'll reprint the part tomorrow.
 
 ![](Images/Leg1.jpg)
 
@@ -591,3 +591,24 @@ Today I've tested all systems on the PCB except the BMS and the servos, which I 
 ![](Images/PCB12.jpg)
 
 **Time spent: 1h 15min**
+
+## October 5th: Testing the BMS and servos
+
+Today I've tested the remaining systems on the PCB, the BMS and the servos. With this everything on the PCB is tested an I can move on to printing some more prototypes.
+
+![](Images/PCB15.jpg)
+**Time spent: 1h**
+
+## October 11th: Prototyping the battery and ESC mounts
+
+The next thing I'm going to do is testing the battery, ESC, LiDAR and motor mounts. Today, I designed a test piece for the battery and ESC mounts. This piece also tests if the cables to connect the two are long enough, as arranged in the real thing. 
+
+The test piece also includes two rod attachments with a new locking method that I'm testing using bolts. If this method were to be strong and reliable enough, I would use it to avoid the unpredictability of friction fits and to avoid using glue (which requires sanding the rods for strong adhesion, and I don't have the necessary equipment to do that).
+
+![](Images/Prints4.jpg)
+
+The bad news: the cables aren't long enough and I don't have enough margin to move the mounts. The fix is really easy nonetheless, I'll just have to buy an male to female adapter which will extend the cables just enough.
+
+The good news: bolt locking the rods works like a charm! No more testing tolerances or buying expensive equipment to sand the rods. I will update the design to use this method everywhere.
+
+**Time spent: 2h 45min**
