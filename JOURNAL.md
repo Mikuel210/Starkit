@@ -805,7 +805,7 @@ Today I printed the first module of Starkit. After cancelling the first print ea
 
 With this Starkit officially goes from CAD to reality!
 
-## October 27 post processing and assembly
+## October 27: Post processing and assembly
 
 Today I removed all support material from the module and assembled a mock up to see how the rocket will look. I'm so excited this is finally becoming real!
 
