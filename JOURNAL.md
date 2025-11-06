@@ -609,6 +609,210 @@ The test piece also includes two rod attachments with a new locking method that 
 
 The bad news: the cables aren't long enough and I don't have enough margin to move the mounts. The fix is really easy nonetheless, I'll just have to buy an male to female adapter which will extend the cables just enough.
 
-The good news: bolt locking the rods works like a charm! No more testing tolerances or buying expensive equipment to sand the rods. I will update the design to use this method everywhere.
+The good news: bolt locking the rods works like a charm! No more testing tolerances or buying expensive equipment to sand the rods. I will now update the design to use this method everywhere.
 
 **Time spent: 2h 45min**
+
+## October 12: CADding
+
+Today I adjusted the CAD model with the things I learnt from yesterday's prototype. With the prototype I also realized that the propellers that I've got are slightly larger from the ones I originally planned on using, which made the margin between the propeller and the print really low. I tried to make the diameter of the rocket larger, but my CAD model broke apart.
+
+At this point there are many changes that I want to make, such as redesigning the airflow straighteners, using foam on the landing legs to reduce vibrations, changing all rod attachments to use 0.5mm of tolerance + a bolt lock, and changing the design to use only 1 rod segment instead of 2 (this will make the rocket shorter which is generally beneficial, and the new rod locking method allows me to attach prints in the middle of rod segments instead of in between them).
+
+It became increasingly more obvious that with the mess that my CAD structure is I wouldn't be able to do all of this, so I decided to start over. I haven't made a lot of progress so far but I have a much cleaner structure from the beginning.
+
+I've decided to split the model on 3 modules: the propulsion module at the bottom, the guidance module at the middle and the control module at the top.
+
+![](Images/CAD12.png)
+
+**Time spent: 2h 45min**
+  
+## October 15th: Progress on the propulsion module
+
+Today I continued working on the new CAD model. First, I added attachments for the carbon fiber rods on the propulsion module:
+
+![](Images/3.png)
+
+I then added the redesigned airflow straighteners, which will hold the motor and on the new model, the LiDAR as well.
+
+![](Images/4.png)
+
+Next, I added mounts for the ESCs:
+
+![](Images/5.png)
+
+Finally, I added the battery mounts:
+
+![](Images/6.png)
+
+**Time spent: 1h**
+
+## October 16th: Progress on the new CAD model
+
+Today I started working on the guidance module. I've made a structure with attachments for the rods and for the PCB.
+
+![](Images/7.png)
+  
+Next, I added attachments for the landing leg servos:
+
+![](Images/8.png)
+
+I then started the design of the control module. I've added rod attachments and mounts for the TVC servos as well.
+
+![](Images/9.png)
+
+After that, I've set up an assembly that joins all modules and the carbon fiber rods.
+
+![](Images/10.png)
+
+Next I've added attachments for the landing legs on the propulsion module:
+
+![](Images/11.png)
+
+After that, I've added an attachment for the LiDAR below the motor. This new position will make it easier to solve altitude in code, and it makes the attachment lighter as well.
+
+![](Images/12.png)
+
+Finally, I added the motor mount on the propulsion assembly and I added fillets on everything. The propulsion assembly is almost finished!
+
+![](Images/13.png)
+
+**Time spent: 2h 30min**
+
+## October 17th: Progress on the new CAD model
+
+Today I started by adding the motor mount on the control assembly.
+
+![](Images/14.png)
+
+Next, I added the servos for leg deployment to the guidance assembly.
+
+![](Images/15.png)
+
+I then added the TVC servos and vanes to the control assembly.
+
+![](Images/16.png)
+
+Next, I made the landing legs:
+
+![](Images/17.png)
+
+![](Images/18.png)
+
+After that, I added some foam to reduce vibrations on deployment.
+
+![](Images/19.png)
+
+I then added the PCB to the guidance module.
+
+![](Images/20.png)
+
+Finally, I added rod locking bolts in the propulsion and guidance assemblies.
+
+![](Images/21.png)
+
+![](Images/22.png)
+
+**Time spent: 5h 15min**
+
+## October 19th: Polishing the new CAD model
+
+Today I added bolts for locking the carbon fiber rods to the control module as well
+
+![](Images/23.png)
+
+After that I added drafts on airflow straighteners to strengthen their joint with the structure.
+
+![](Images/26.png)
+
+**Time spent: 30min**
+
+## October 21st: Polishing the new CAD model
+
+Today I added some rod locking bolts that were missing on the landing legs.
+
+![](Images/27.png)
+
+![](Images/28.png)
+
+With this the new CAD model is complete!
+
+![](Images/30.png)
+
+![](Images/29.png)
+
+**Time spent: 30min**
+
+## October 24th: Designing prototypes
+
+Today, I made some prototypes to test some parts of the new design. This prototype tests the motor mount and the LiDAR mount:
+
+![](Images/31.png)
+
+And this prototype tests the attachment for the TVC vanes:
+
+![](Images/32.png)
+
+**Time spent: 15min**
+
+## October 25th: Prototyping
+
+Today I printed the test pieces I had designed yesterday. The bolts for holding the motor wouldn't fit, so I adjusted the CAD model to fix that.
+
+![](Images/Prints5.jpg)
+
+I also printed the piece to test the attachment for the TVC vanes and everything worked as expected.
+
+## October 26th: Rotating LiDAR mount
+
+Today I rotated the LiDAR sensor on the bottom because I noticed its cable to the PCB would be shorter this way.
+
+![](Images/34.png)
+
+**Time spent: 15min**
+
+## November 1st: Weight optimizations
+
+Today I woke up and realized that I could make a simple change on the design and save a lot of mass. First, I removed the servos for leg deployment from the guidance assembly, leaving the PCB mount only.
+
+![](Images/35.png)
+
+Next, I moved the servos for leg deployment to the control assembly.
+
+![](Images/36.png)
+
+Finally, I updated the assemblies to use the new design.
+
+![](Images/37.png)
+
+![](Images/38.png)
+
+![](Images/39.png)
+
+With this change, the guidance assembly weighs basically nothing, and the control assembly doesn't weigh that much more because it had already got the structure to hold servos.
+
+At this point I'm happy with the design and I've tested and prototyped everything that I wanted to. I'm finally going to start building this thing and see how it goes!
+
+**Time spent: 1h 30min**
+
+---
+
+# Building Starkit
+
+## October 26: Printing the first module
+
+Today I printed the first module of Starkit. After cancelling the first print early on because I had forgotten a support, I let the second print run overnight and I woke up to a beautiful first module! (I actually woke up multiple times over the night because the filament kept tangling)
+
+With this Starkit officially goes from CAD to reality!
+
+## October 27 post processing and assembly
+
+Today I removed all support material from the module and assembled a mock up to see how the rocket will look. I'm so excited this is finally becoming real!
+
+![](Images/Build1.jpg)
+
+**Time spent: 30min**
+
+
+
+

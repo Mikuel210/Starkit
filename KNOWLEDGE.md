@@ -9,12 +9,7 @@
 Printing orientation affects the fit massively
 A longer hole means more friction
 
-- Carbon rod tolerance
-	- Horizontal
-		- 5mm: 0.2 + chamfer (could be tighter)
-	- Vertical
-		- 5mm: 0.15 (really tight fit), 0.2 (tight still)
-		- 3mm: 0.42 on leg (perfect fit, do not touch), 0.25 on test pieces
-- Bolt tolerance: 0.2
+- Carbon rod tolerance -> 0.5 total, use bolt
+- Bolt tolerance: 0.2 -> 0.4 total
 
 Max. spring length: >= 14cm

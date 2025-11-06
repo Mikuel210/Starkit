@@ -649,7 +649,7 @@
       "plot": "../Gerber Files/",
       "pos_files": "",
       "specctra_dsn": "",
-      "step": "Starkit.step",
+      "step": "../../../../../../../Downloads/Starkit.step",
       "svg": "",
       "vrml": ""
     },
