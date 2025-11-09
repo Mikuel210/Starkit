@@ -2,7 +2,9 @@
 
 Starkit is a thrust vector controlled electric model rocket designed for propulsive landings
 
-![](Images/39.png)
+<p align="center">
+  <img src="https://raw.githubusercontent.com/Mikuel210/Starkit/refs/heads/main/Images/39.png" />
+</p>
 
 ## Project description
 
