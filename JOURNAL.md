@@ -813,6 +813,19 @@ Today I removed all support material from the module and assembled a mock up to 
 
 **Time spent: 30min**
 
+## November 6th
 
+20 min
 
+19 55 to 21 15ish
+
++15min ish
+
+Printing and assembling bolts + coding flight software (reading sensors)
+
+## November 7th
+
+Coding, check hackatime -> pid works and actuates motors
+
+## November 8th
 

@@ -85,10 +85,18 @@
 - [x] Decide if layout has to be changed
 - [x] Test motor attachment
 - [/] Printing and assembly
-	- [/] Modules
-	- [ ] Leg parts
-	- [ ] Servo attachments
-	- [ ] Bolts
+	- [/] Printing
+		- [ ] Buy filament
+			- [ ] Check in on Clutter grant
+		- [/] Propulsion module
+			- [x] Rod bolts
+			- [ ] Landing legs
+		- [ ] Guidance Assembly
+			- [ ] Rod bolts
+			- [ ] PCB bolts
+		- [ ] Control assembly
+			- [ ] Rod bolts
+			- [ ] Servo attachments
 	- [ ] Assembly!
 	- [ ] Cables
 - [ ] Test motors
@@ -96,7 +104,19 @@
 - [ ] Test motors w/ propellers (@ 90% thrust, they can overheat)
 - [ ] Test stand assembly and PID tuning
 	- [ ] Idea: Let the thing fly but tethered
-- [ ] Flight software
-	- [ ] Calibrate ADC
+- [/] Flight software
+	- [x] TVC PID
+	- [x] Altitude PID
+	- [x] Fix TVC wiggle
+	- [ ] State machine
+	- [x] Continuous angle (breaks at 180)
+	- [x] Actuate TVC
+	- [ ] Unity Simulation
+		- [ ] Communication
+	- [ ] Fuse altitude
+	- [ ] Add BMS
+		- [ ] Calibrate ADC
 - [ ] Simulation
 - [ ] Countdown software
+- [ ] FLY IT
+	- [ ] micros() will overflow after 1 hour
