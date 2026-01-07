@@ -801,7 +801,7 @@ At this point I'm happy with the design and I've tested and prototyped everythin
 
 ## October 26: Printing the first module
 
-Today I printed the first module of Starkit. After cancelling the first print early on because I had forgotten a support, I let the second print run overnight and I woke up to a beautiful first module! (I actually woke up multiple times over the night because the filament kept tangling)
+Today I printed the first module of Starkit, the propulsion module. After cancelling the first print early on because I had forgotten a support, I let the second print run overnight and I woke up to a beautiful first module! (I actually woke up multiple times over the night because the filament kept tangling)
 
 With this Starkit officially goes from CAD to reality!
 
@@ -813,19 +813,79 @@ Today I removed all support material from the module and assembled a mock up to 
 
 **Time spent: 30min**
 
-## November 6th
+## November 6th: Printing bolts + Starting code
 
-20 min
+Today I've printed rod locking bolts for the propulsion module. I've also started coding the flight software while I wait for prints. For now the rocket is able to read its sensors and I'm able to easily switch between getting data from the sensors or from a simulation.
 
-19 55 to 21 15ish
-
-+15min ish
-
-Printing and assembling bolts + coding flight software (reading sensors)
+**Time spent: 2h**
 
 ## November 7th
 
-Coding, check hackatime -> pid works and actuates motors
+Today I've continued coding the flight software for Starkit. I've implemented PID algorithms which Starkit is now able to use to correct its orientation through the TVC servos.
 
-## November 8th
+**Time spent: 4h 30min**
 
+## November 8th: Developing flight software features
+
+Today I've continued making the flight software.
+
+- Starkit is now able to correct its altitude through the throttle of the motors
+- Sensor fusion now works when the IMU is vertical, as it is in the rocket
+- All TVC axis work now for correcting the rocket's orientation
+- A state machine now manages the flight phases according to a predefined flight profile
+
+**Time spent: 5h 30min**
+
+## November 15th: Printing landing leg tops
+
+Today I printed the top part of the landing legs, which acts as a hinge and attaches to a spring for the leg to deploy.
+
+## November 16th: Attaching batteries
+
+Today I attached the batteries to the propulsion module using velcro.
+
+**Time spent: 15min**
+
+## November 18th: Preparing guidance module print
+
+Today I prepared the guidance module for printing.
+
+**Time spent: 15min**
+
+## November 20th: Printing and assembling landing leg
+
+Today I printed the first landing leg and assembled it. I've noticed that with the 3mm rods, the bolt locks slip under stress, which is problematic since landing legs need to support the entire weight of the rocket. 5mm rods would probably slip much less due to increased contact area with the bolt. Thankfully, I made the rocket shorter and I have just the right amount of 5mm rods left over to do this, so I will test how it performs soon.
+
+## December 4th (my birthday!): Testing 5mm rods in landing legs 
+
+Today I wanted to try replacing the 3mm rods in the landing legs with 5mm ones. I made the necessary changes in the CAD model and printed the updated parts.
+
+Unfortunately I've noticed even with 5mm rods and more bolts, bolt locking simply is not enough for the stress those parts are facing. Also, that PLA bolt that supports all the weight from the landing legs broke. I really need something stronger, because every time it breaks there's a chance it gets stuck on the module and I have to reprint the whole thing, which is 350g of filament. Plus I can't have it break when it's supporting the whole weight of the rocket.
+
+**Time spent: 1h 15min**
+
+## December 7th: Testing PETG and shock absorbers
+
+Today I wanted to test replacing the PLA bolt with a PETG cylinder, printed horizontally for more strength. While the filament was drying, I tried to start cutting the foam I wanted to add to reduce vibrations on leg deployment, but it was so small it was very difficult to cut and it barely cushioned. Because of this, I designed a 3D printed flexible shock absorber.
+
+The result? An almost perfect landing leg! The PETG cylinder is holding up well. The landing leg tip is slipping slightly but I've already redesigned that for about the 10th time and I just have to print the updated version. I have to iterate on the shock absorbers as well but overall, everything is working as I wanted for it to.
+
+**Time spent: 1h 45min**
+
+## December 13th: Printing updated landing leg parts
+
+I've printed the updated leg tip, a stronger PETG cylinder, and the updated shock absorbers. The shock absorbers spaghettified, but with the rest of the parts I was able to assemble an almost perfect landing leg! I will print the updated shock absorbers tomorrow.
+
+**Time spent: 1h**
+
+## December 14th: Printing and assembling landing leg
+
+Today I printed the updated shock absorbers, pasted them and finally assembled the perfect landing leg! The updated shock absorbers do a really good job, and I'm now comfortable to print the 3 remaining legs, so I started printing all the parts required for assembling another one.
+
+**Time spent: 30min**
+
+## January 7th: Printing the remaining landing legs
+
+Today I printed the parts for the 2 remaining landing legs.
+
+**Time spent: 15min**

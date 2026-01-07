@@ -66,7 +66,7 @@
 		- [x] Evaluate how much taller I can make the battery mount without interfering with the cables
 		- [x] Evaluate velcro behavior
 		- [x] Evaluate does the prop fit??
-		- [ ] I have to buy XT60 extenders because the cable isn't long enough and I don't have enough margin to move the mounts. A 3cm extension is fine (though I would check again before buying)
+		- [x] I have to buy XT60 extenders because the cable isn't long enough and I don't have enough margin to move the mounts. A 3cm extension is fine (though I would check again before buying)
 		- Bolt locking rods is the new standard
 		- Required adjustments
 			- [x] 0.5 tolerance for rods
@@ -86,15 +86,26 @@
 - [x] Test motor attachment
 - [/] Printing and assembly
 	- [/] Printing
-		- [ ] Buy filament
-			- [ ] Check in on Clutter grant
+		- [x] Buy filament
+			- [x] Check in on Clutter grant
 		- [/] Propulsion module
 			- [x] Rod bolts
-			- [ ] Landing legs
-		- [ ] Guidance Assembly
-			- [ ] Rod bolts
-			- [ ] PCB bolts
+				- [?] Reprint them with less tolerance
+			- [/] Landing legs
+				- [x] Consider switching to 5mm rods
+				- [-] Reprint leg tops in order to get a lower locking angle
+				- [x] Reprint leg bottoms and potentially leg tips to get a stronger grip on the rods
+				- [x] Redesign leg tips and bottoms for a stronger grip and straighter bolts
+				- [x] Redesign leg bottom bolt
+				- [x] Reprint leg parts
+				- [/] Iterate on shock absorbers
+				- [/] Print updated leg tip, bolts with more tolerance and cylinder with less tolerance
+				- [ ] Hot glue together the perfect leg
+		- [x] Guidance Assembly
+			- [x] Rod bolts
+			- [x] PCB bolts
 		- [ ] Control assembly
+			- [ ] Buy PETG
 			- [ ] Rod bolts
 			- [ ] Servo attachments
 	- [ ] Assembly!
@@ -108,7 +119,7 @@
 	- [x] TVC PID
 	- [x] Altitude PID
 	- [x] Fix TVC wiggle
-	- [ ] State machine
+	- [x] State machine
 	- [x] Continuous angle (breaks at 180)
 	- [x] Actuate TVC
 	- [ ] Unity Simulation

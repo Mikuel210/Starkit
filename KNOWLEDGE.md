@@ -13,3 +13,5 @@ A longer hole means more friction
 - Bolt tolerance: 0.2 -> 0.4 total
 
 Max. spring length: >= 14cm
+
+PLA requires ears
